@@ -1,0 +1,557 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Jingwei Huang">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+	<link href="./styles.css" rel="stylesheet">
+<title>Welcome to Jingwei Huang's homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  // You used .myCarousel here. 
+  // That's the class selector not the id selector,
+  // which is #myCarousel
+  $('#carousel-example-generic').carousel();
+});
+</script>
+</head>
+
+<body>
+	<div id="container">	
+		<div id="main">
+			<div id="pic">
+				<img src="./asset/images/head.jpg" height="200"/>
+			</div>
+			<div id="department">
+				<h1>Jingwei Huang</h1>
+				<p class="note">Ph.D Candidate</a></p>
+				<p> <a href="http://geometry.stanford.edu/">Geometric Computing Lab</a> <br/>
+				Dept. of Computer Science<br/>
+				Stanford University, USA
+				</p>
+				<p> Office: S296 James H. Clark Center<br/>
+					Stanford, CA 94305<br/>
+					Email: jingweih@stanford.edu
+				</p>
+				<p>
+					<a href="https://github.com/hjwdzh">github</a> / 
+					<a href="https://scholar.google.com/citations?user=7eJBk1UAAAAJ&hl=en">google scholar</a> / 
+					<a href="#publish">publication</a>
+				</p>
+			</div>
+			<div id="intro">
+				<!--<img src="./asset/images/news/3drr.jpg">-->
+				<div id="carousel-example-generic" class="carousel carousel-fade">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li> 
+						<li data-target="#carousel-example-generic" data-slide-to="4"></li> 
+						<li data-target="#carousel-example-generic" data-slide-to="5"></li> 
+						<li data-target="#carousel-example-generic" data-slide-to="6"></li> 
+						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="10"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="11"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="12"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="13"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href=""><img src="./asset/images/philosophy.jpg"></a>
+							<div class="carousel-caption cc-background">
+								<p>Research Philosophy
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#texturenet"><img src="./asset/images/texturenet/teaser.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>TextureNet: Consistent Local Parametrizations for Learning from High-Resolution Signals on Meshes
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#nocs"><img src="./asset/images/nocs/posercnn.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#sphericalcnn"><img src="./asset/images/sphericalcnn/teaser.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>Spherical CNNs on Unstructured Grids
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#nuft"><img src="./asset/images/nuft/teaser.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>Convolutional Neural Networks on non-uniform geometrical signals using Euclidean spectral transformation
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#quadriflow"><img src="./asset/images/quadriflow/teaser.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>QuadriFlow: A Scalable and Robust Method for Quadrangulation
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#3dlite"><img src="./asset/images/3dlite/teaser.png"> </a>
+							<div class="carousel-caption cc-background">
+								<p>3DLite: Towards Commodity 3D Scanning for Content Creation
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#vr-6dof"><img src="./asset/images/vr/6dof.png"></a>
+							<div class="carousel-caption cc-background">
+								<p>6-DOF VR Videos with a Single 360-Camera</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#img-texture"><img src="./asset/images/imgproc/TextureTransfer-small.jpg"></a>
+							<div class="carousel-caption cc-background">
+								<p>Unsupervised Texture Transfer from Images to Model Collections  
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#phys-tree"><img src="./asset/images/phys/tree-small.png"></a>
+							<div class="carousel-caption cc-background">
+								<p>Real-time Interactive Tree Animation</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#img-thumb"><img src="./asset/images/imgproc/thumbnail-small.jpg"> </a>
+							<div class="carousel-caption cc-background">
+								<p>Automatic Thumbnail Generation Based on Visual Representativeness and Foreground Recognizability
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#img-corr"><img src="./asset/images/imgproc/corr-small.jpg"> </a>
+							<div class="carousel-caption cc-background">
+								<p>A surface approximation method for image and video correspondences
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#vr-pano"><img src="./asset/images/vr/pano-small.png"></a>
+							<div class="carousel-caption cc-background">
+								<p>Stereo Panorama Video Stitching</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#slam"><img src="./asset/images/slam/example-small.jpg"></a>
+							<div class="carousel-caption cc-background">
+								<p>RGB-D SLAM and Real-time Reconstruction</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gallery">
+		  <h3> Gallery (Click on the Images!) </h3>
+		  <table align="center">
+		  <tr>
+			<th align="center"><h4>Stereo Panorama</h4></th>
+			<th align="center"><h4>Indoor Reconstruction</h4></th>
+			<th align="center"><h4>Object Reconstruction</h4></th>
+			<th align="center"><h4>QuadMesh Conversion</h4></th>
+		  </tr>
+		  <tr>
+			<td>
+			  <a href="./videos/dancing.mp4">
+				<img src="./asset/images/vr/pano.png" width=250px/>
+			  </a>
+			</td>
+			<td>
+			  <a href="./indoor.html">
+				<img src="./asset/images/3dlite/office0-sqr.jpg" width=250px/>
+			  </a>
+			</td>
+			<td>
+			  <a href="./objects.html">
+				<img src="./asset/images/objectscan.jpg" width=250px/>
+			  </a>
+			</td>
+			<td>
+			  <a href="https://yichaozhou.com/publication/1805quadriflow/#demo">
+				<img src="./asset/images/quadriflow/demo.png" width=300px>
+			  </a>
+			</td>
+		  </tr>
+		  </table> 
+		</div>
+		<div id="columnswrapper">
+			<div class="column">
+				<h3>Research Statement</h3>
+				<p>My research interests are computer graphics, computer vision, virtual reality and geometry processing. My goal is to provide ready-to-use scanning geometry and offer high-level understanding to the 3D data.
+				</p>
+				<h3>Skills</h3>
+				<p>Proficient with C/C++ Programming</p>
+				<p>Good at Python/Matlab/CUDA/GLSL/HLSL GPU Programming</p>
+				<p>Familiar with Pytorch/Tensorflow</p>
+				<p>Familiar with Java/C# Programming</p>
+				<p>Familiar with PHP/Javascript/Unity/Android programming</p>
+			</div> 
+			<div class="column">
+				<h3>My Mission</h3>
+				<p>To my knowledge, there are creative ideas and awesome applications emerging every year, and the demos are very fancy. However, most of these potential applications can hardly be used in common days, mostly due to the problem of robustness in graphics or poor accuracy in vision. I view my mission as to solve problems in computer graphics and vision, particularly in environment reconstruction from images and video.
+				</p>
+				<p>Recently, my proposed solution is to reconstruct and quantize the 3D data as CAD models and textures on top of that. I have solved the problem of surface parametrization to a industry useable level (quadrangulation, see my QuadriFlow project), and will use this as a foundation to solve the 3D texture generation. Hopefully, I will find practical solutions and bring them to market in the future.
+			</div>               
+		</div>
+	<div id="thesis">
+			<h3>PhD Thesis</h3>
+						<div class="thesis">
+								<a name="thesis"/>
+				<div class="pimg"><img src="./asset/images/thesis/thesis.png" width=135px></div>
+								<div class="ptitle">Surface Texture Processing</div>
+								<div class="pauthors"><strong>Jingwei Huang</strong></div>
+								<div class="pvenue">Stanford University</div>
+								<div class="plinks">
+					<a href="https://searchworks.stanford.edu/view/13570757">PDF</a>&nbsp
+										<a href="http://stanford.edu/~jingweih/papers/thesis/defense.mp4">Video</a>&nbsp
+					<a href="http://stanford.edu/~jingweih/papers/thesis/defense.pptx">Slides</a>&nbsp
+								</div>
+						</div>		
+	</div>
+		<!-- ---------------------- Publications ---------------->
+		<div id="publications">
+			<h3>Publications</h3>
+			<h4><a name="publish"><font color="000000" size="3.5em"><strong>Deep Learning</strong></font></a></h4>
+						<div class="paper">
+								<a name="ato"/>
+								<div class="pimg"><img src="./asset/images/ato/ato.png" width=135px></div>
+								<div class="ptitle">Adversarial Texture Optimization from RGB-D Scans</div>
+								<div class="pauthors"><strong>Jingwei Huang</strong>, Justus Thies, Angela Dai, Abhijit Kudu, Chiyu "Max" Jiang, Leonidas Guibas, Matthias Niessner, Thomas Funkhouser</div>
+								<div class="pvenue">CVPR 2020</div>
+								<div class="plinks">
+										<a href="http://stanford.edu/~jingweih/papers/advtex/supp/paper.pdf">PDF</a>&nbsp
+					<a href='./papers/advtex'>Website</a>&nbsp
+										<a href="https://github.com/hjwdzh/AdversarialTexture">Code</a>&nbsp
+					<a href="https://www.youtube.com/watch?v=52xlRn0ESek&feature=youtu.be">Video</a>
+								</div>
+								<div class="pkeywords">
+					Joint texture optimization with a learned deep metric which is robust to complex scanning errors.
+								</div>
+						</div>
+						<div class="paper">
+								<a name="llig"/>
+								<div class="pimg"><img src="./asset/images/llig/llig.png" width=135px></div>
+								<div class="ptitle">Learning Local Implicit Grid Representation for 3D Scenes</div>
+				<div class="pauthors">Chiyu "Max" Jiang, Avneesh Sud, Ameesh Makadia, <strong>Jingwei Huang</strong>, Matthias Niessner, Thomas Funkhouser</div>
+								<div class="pvenue">CVPR 2020</div>
+								<div class="plinks">
+										<a href="https://arxiv.org/abs/2003.08981">PDF</a>&nbsp
+					<a href="https://github.com/google-research/google-research/tree/master/local_implicit_grid">Code</a>&nbsp
+					<a href="https://www.youtube.com/watch?v=XCyl1-vxfII&feature=youtu.be">Video</a>&nbsp
+								</div>
+								<div class="pkeywords">
+					Learning a chunk-based deep SDF for scene reconstruction.
+								</div>
+						</div>
+			<div class="paper">
+				<a name="nvps"/>
+				<div class="pimg"><img src="./asset/images/vps/vps.png" width=135px></div>
+				<div class="ptitle">NeurVPS: Neural Vanishing Point Scanning via Conic Convolution</div>
+				<div class="pauthors">Yichao Zhou, Haozhi Qi, <strong>Jingwei Huang</strong>, Yi Ma</div>
+				<div class="pvenue">NeurIPS 2019</div>
+				<div class="plinks">
+					<a href="https://arxiv.org/abs/1910.06316">PDF</a>&nbsp
+					<a href="https://yichaozhou.com/publication/1905neurvps/">Website</a>&nbsp
+					<a href="https://github.com/zhou13/neurvps">Code</a>&nbsp
+					<a href="https://yichaozhou.com/publication/1905neurvps/slides.pptx">Slides</a>
+				</div>
+				<div class="pkeywords">
+					Deep learning-based vanishing point detection method: Warp the image into conic space and use CNN to evaluate corresponding potential vanishing point.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="framenet"/>
+				<div class="pimg"><img src="./asset/images/framenet/framenet.png" width=135px></div>
+				<div class="ptitle">FrameNet: Learning Local Canonical Frames of 3D Surfaces from a Single RGB Image</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Yichao Zhou, Thomas Funkhouser, Leonidas Guibas</div>
+				<div class="pvenue">ICCV 2019</div>
+				<div class="plinks">
+					<div class="plink"><a href="papers/framenet.pdf">PDF</a>&nbsp
+					<a href="http://stanford.edu/~jingweih/papers/framenet/">Website</a>&nbsp
+					<a href="https://github.com/hjwdzh/FrameNet">Code</a></div>
+				</div>
+				<div class="pkeywords">
+					We introduce the novel problem of identifying dense canonical 3D coordinate frames from a single RGB image. We observe that each pixel in an image corresponds to a surface in the underlying 3D geometry, where a canonical frame can be identified. We propose an algorithm to predict it from RGB.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="texturenet"/>
+				<div class="pimg"><img src="./asset/images/texturenet/texturenet.png" width=135px></div>
+				<div class="ptitle">TextureNet: Consistent Local Parametrizations for Learning from High-Resolution Signals on Meshes</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Haotian Zhang, Li Yi, Thomas Funkhouser, Matthias Niessner, Leonidas Guibas</div>
+				<div class="pvenue">CVPR 2019 <strong>(Oral Presentation)</strong></div>
+				<div class="plinks">
+					<div class="plink"><a href="https://arxiv.org/pdf/1812.00020.pdf">PDF</a>&nbsp
+					<a href="http://stanford.edu/~jingweih/papers/texturenet/">Website</a>&nbsp
+					<a href="https://github.com/hjwdzh/TextureNet">Code</a></div>
+				</div>
+				<div class="pkeywords">
+					We introduce, TextureNet, a neural network architecture designed to extract features from high-resolution signals associated with 3D surface meshes (e.g., color texture maps). The key idea is to utilize a 4-rotational symmetric (4-RoSy) field to define a domain for convolution on a surface.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="nocs"/>
+				<div class="pimg"><img src="./asset/images/nocs/nocs.png" width=135px></div>
+				<div class="ptitle">Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation</div>
+				<div class="pauthors">He Wang, Srinath Sridhar, <strong>Jingwei Huang</strong>, Julien Valentin, Shuran Song, Leonidas Guibas</div>
+				<div class="pvenue">CVPR 2019 <strong>(Oral Presentation)</strong></div>
+				<div class="plinks">
+					<div class="plink">
+						<a href="https://arxiv.org/pdf/1901.02970.pdf">PDF</a>&nbsp
+						<a href="https://github.com/hughw19/NOCS_CVPR2019">Code</a>&nbsp
+					</div>
+				</div>
+				<div class="pkeywords">
+					Estimate 6DOF 3D object pose with unknown categories from 2D images. We create the synthetic dataset by rendering canonical object coordinates to images and learn it from neural networks.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="sphericalcnn"/>
+				<div class="pimg"><img src="./asset/images/sphericalcnn/sphericalcnn.png" width=135px></div>
+				<div class="ptitle">Spherical CNNs on Unstructured Grids</div>
+				<div class="pauthors">Chiyu 'Max' Jiang, <strong>Jingwei Huang</strong>, Karthik Kashinath, Prabhat, Philip Marcus, Matthias Niessner</div>
+				<div class="pvenue">ICLR 2019</div>
+				<div class="plinks">
+					<div class="plink"><a href="https://arxiv.org/pdf/1901.02039.pdf">PDF</a>&nbsp
+					<a href="http://www.maxjiang.ml/proj/ugscnn">Website</a>&nbsp
+					<a href="https://github.com/maxjiang93/ugscnn">Code</a></div>
+				</div>
+				<div class="pkeywords">
+					We present an efficient convolution kernel for Convolutional Neural Networks (CNNs) on unstructured grids using parameterized differential operators while focusing on spherical signals such as panorama images or planetary signals.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="nuft"/>
+				<div class="pimg"><img src="./asset/images/nuft/nuft.png" width=135px></div>
+				<div class="ptitle">Convolutional Neural Networks on non-uniform geometrical signals using Euclidean spectral transformation</div>
+				<div class="pauthors">Chiyu 'Max' Jiang, Dequan Wang, <strong>Jingwei Huang</strong>, Philip Marcus, Matthias Niessner</div>
+				<div class="pvenue">ICLR 2019</div>
+				<div class="plinks">
+					<div class="plink"><a href="https://arxiv.org/pdf/1901.02070.pdf">PDF</a>&nbsp
+					<a href="http://www.maxjiang.ml/proj/nuft">Website</a>&nbsp
+					<a href="https://github.com/maxjiang93/DDSL">Code</a></div>
+				</div>
+				<div class="pkeywords">
+					We develop mathematical formulations for Non-Uniform Fourier Transforms (NUFT) to directly sample nonuniform data signals of different topologies defined on a simplex mesh into the spectral domain with no spatial sampling error.
+				</div>
+			</div>
+			<h4><a name="publish"><font color="000000" size="3.5em"><strong>Geometry, VR and 3D Reconstruction</strong></font></a></h4>
+			<div class="paper">
+				<a name="quadriflow"/>
+				<div class="pimg"><img src="./asset/images/quadriflow/quad.jpg" width=135px></div>
+				<div class="ptitle">QuadriFlow: A Scalable and Robust Method for Quadrangulation</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Yichao Zhou, Matthias Niessner, Jonathan Shewchuk, Leonidas Guibas</div>
+				<div class="pvenue">Symposium on Geometry Processing, 2018 <strong>(Best Paper Award)</strong></div>
+				<div class="plinks">
+					<div class="plink"><a href="http://stanford.edu/~jingweih/papers/quadriflow/quadriflow.pdf">PDF</a>&nbsp
+					<a href="http://stanford.edu/~jingweih/papers/quadriflow/">Website</a>&nbsp
+					<a href="https://github.com/hjwdzh/QuadriFlow">Code</a></div>
+				</div>
+				<div class="pkeywords">
+					Robustly and Efficiently Convert Triangle Manifold Meshes to High-quality Quadrilateral Manifold Meshes. It approximates the mixed-integer optimization problem with a maximum flow problem.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="3dlite"/>
+				<div class="pimg"><img src="./asset/images/3dlite/office0.jpg" width=135px></div>
+				<div class="ptitle">3DLite: Towards Commodity 3D Scanning for Content Creation</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Angela Dai, Leonidas Guibas, Matthias Niessner</div>
+				<div class="pvenue">SIGGRAPH Asia, 2017</div>
+				<div class="plinks">
+					<div class="plink"><a href="http://graphics.stanford.edu/projects/3dlite/huang2017dlite_hi.pdf">PDF</a>&nbsp
+					<a href="http://graphics.stanford.edu/projects/3dlite/">Website</a></div>
+				</div>
+				<div class="pkeywords"> 
+					Complete the geometry and color of 3D scanning model. Detect planar structure of the geometry, extrapolate to complete the scene. Texture optimization by fixing misalignment, motion blur and auto-exposure artifacts.
+				</div>
+			</div>
+
+			<div class="paper">
+				<a name="vr-6dof"/>
+				<div class="pimg"><img src="./asset/images/vr/6dof-new.png" width=135px></div>
+				<div class="ptitle">6-DOF VR Videos with a Single 360-Camera</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Zhili Chen, Duygu Ceylan, Hailin Jin</div>
+				<div class="pvenue">IEEE VR, 2017</div>
+				<div class="plinks">
+					<div class="plink"><a href="./papers/6dof.pdf">PDF</a>&nbsp
+					<a href="./videos/6dof.mp4">Video</a></div>
+				</div>
+				<div class="pkeywords">
+					Build a VR application that offer 6-DOF freedom with translation and rotation with input as a monoscopic 360 video.
+				</div>
+			</div>
+			<h4><a name="publish"><font color="000000" size="3.5em"><strong>Other Computer Graphics Publications</strong></font></a></h4>
+			<div class="paper">
+				<a name="img-texture"/>
+				<div class="pimg"><img src="./asset/images/imgproc/TextureTransfer.jpg" width=135px></div>
+				<div class="ptitle">Unsupervised Texture Transfer from Images to Model Collections</div>
+				<div class="pauthors">Tuanfeng Y. Wang, Hao Su, Qixing Huang, <strong>Jingwei Huang</strong>, Leonidas Guibas, Niloy J. Mitra</div>
+				<div class="pvenue">SIGGRAPH Asia, 2016</div>
+				<div class="plinks">
+					<div class="plink"><a href="./papers/texture.pdf">PDF</a>&nbsp
+					<a href="http://geometry.cs.ucl.ac.uk/projects/2016/texture_transfer/">Website</a></div>
+				</div>
+				<div class="pkeywords"> 
+					Transfer textures from product images to 3D shapes. The increased texture variation in ShapeNet is validated to be effective for RenderForCNN. The technique can future be used in improving texture of scanning data.
+				</div>
+			</div>
+
+			<div class="paper">
+				<a name="phys-tree"/>
+				<div class="pimg"><img src="./asset/images/phys/tree.png" width=135px></div>
+				<div class="ptitle">Real-time Interactive Tree Animation</div>
+				<div class="pauthors">Ed Quigley, Yue Yu, <strong>Jingwei Huang</strong>, Winnie Lin, Rod Fedkiw</div>
+				<div class="pvenue">IEEE TVCG, 2017</div>
+				<div class="plinks">
+					<div class="plink"><a href="./papers/tree.pdf">PDF</a>&nbsp
+					<a href="https://youtu.be/EWz3asQjbiQ">Video</a></div>
+				</div>
+				<div class="pkeywords">
+					Posing and Animating botanical tree models interactively in real time. We use an articulated rigid body model with as-stiff-as-desired rotational springs in conjunction with our newly proposed simulation technique.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="img-thumb"/>
+				<div class="pimg"><img src="./asset/images/imgproc/thumbnail.jpg" width=135px></div>
+				<div class="ptitle">Automatic Thumbnail Generation Based on Visual Representativeness and Foreground Recognizability</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Huarong Chen, Bin Wang, Stephen Lin</div>
+				<div class="pvenue">ICCV, 2015</div>
+				<div class="plinks">
+					<div class="plink"><a href="./papers/thumbnail.pdf">PDF</a></div>
+				</div>
+				<div class="pkeywords">
+					Generating image thumbnail balancing between visual representativeness and foreground recognizability. We propose a combination of various features and use SVM model to learn good thumbnail.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="img-corr"/>
+				<div class="pimg"><img src="./asset/images/imgproc/corr.jpg" width=135px></div>
+				<div class="ptitle">A Surface Estimation Method for Space-time Correspondences</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Bin Wang, Pradeep Sen, Wenping Wang</div>
+				<div class="pvenue">IEEE Transactions on Image Processing, 2015</div>
+				<div class="plinks">
+					<div class="plink"><a href="./papers/corr.pdf">PDF</a></div>
+				</div>
+				<div class="pkeywords">
+					Using B-Spline Approximation and Extension method to refine dense non-rigid correspondences in images or video.
+				</div>
+			</div>
+		</div>
+		<div id="project">
+			<h3>Other Selected Projects</h3>
+			<div class="paper">
+				<a name="slam"/>
+				<div class="pimg"><img src="./asset/images/slam/example.jpg" width=135px></div>
+				<div class="ptitle">Real-time RGB-D SLAM and 3D Reconstruction</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Matthias Niesser, Leonidas Guibas</div>
+				<div class="pvenue">In progress</div>
+				<div class="plinks">
+					<a href="./videos/recon.mov">Video</a></div>
+				<div class="pkeywords">
+					We use plane matching, structural information together with SIFT feature to do real-time RGBD SLAM. The system can get globally consistent structure in a large space with a long scan. Currently, I am trying to use planes to abstract the scenes, and using texture synthesis to achieve a ready-to-use 3D reconstruction.
+				</div>
+			</div>
+			<div class="paper">
+				<a name="vr-pano"/>
+				<div class="pimg"><img src="./asset/images/vr/pano.png" width=135px></div>
+				<div class="ptitle">Stereo Panorama Stitching with 14 GOPROs</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong></div>
+				<div class="pvenue">Qingxian Tech.</div>
+				<div class="plinks">
+					<a href="./videos/dancing.mp4">Video</a></div>
+				<div class="pkeywords">
+					This is what I do as a startup during 3/2015 and 8/2015. The company was purchased by Wei-Shi-Zai-Xian in 3/2016.
+				</div>
+			</div>
+			<div class="paper">
+				<div class="pimg"><img src="./asset/images/phys/bowling.jpg" width=135px></div>
+				<div class="ptitle">PhysBowling: Real-Time Interactive Simulation of Rigid Bodies</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Bin Wang</div>
+				<div class="pvenue">Tsinghua</div>
+				<div class="plinks">
+					<a href="https://github.com/hjwdzh/level-set">[Code]</a>
+					</div>
+					<div class="pkeywords">
+						Self-implemented Rigid Body Physics Engine from Scratch.
+					</div>
+			</div>
+			<div class="paper">
+				<div class="pimg"><img src="./asset/images/phys/fluids.png" width=135px></div>
+				<div class="ptitle">GPU Acceleration of Incompressible Smoothed Particle Hydrodynamics and Applications</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Yun Fei, Bin Wang</div>
+				<div class="pvenue">Tsinghua</div>
+				<div class="plinks">
+					<a href="https://github.com/hjwdzh/Fluid3D">[Code]
+					<a href="https://www.youtube.com/watch?v=lYicbzxpQ_A">Video</a>
+				</div>		
+					<div class="pkeywords">
+					Using DirectX Parallel Computing (HLSL) to implement a real-time SPH Solver for Water Simulation.
+					</div>
+			</div>
+			<div class="paper">
+				<div class="pimg"><img src="./asset/images/imgproc/raytrace.jpg" width=135px></div>
+				<div class="ptitle">GPU Ray Tracing</div>
+				<div class="pauthors"><strong>Jingwei Huang</strong>, Bin Wang</div>
+				<div class="pvenue">Tsinghua</div>
+				<div class="plinks">
+					<a href="https://github.com/hjwdzh/myRaytracer">[Code]</a>
+				</div>
+					<div class="pkeywords">
+					Using OpenGL Parallel Computing (GLSL) to implement a fast GPU ray tracer.
+					</div>
+			</div>
+		</div>
+		<div id="work">
+			<h3> Working Experience </h3>
+			<ul>
+			<li> Research Intern in Google (Machine Perception Team), 6/2019-9/2019</li>
+			<li> Research Intern in Technical University of Munich, 6/2018-9/2018</li>
+			<li> Google Software Engineer Intern (PhD, Daydream), 6/2017-9/2017</li>
+			<li> Research Intern in Adobe Research, 6/2016 - 9/2016 </li>
+			<li> CTO and Co-Founder in Qingxian Tech., 3/2015 - 8/2015 </li>
+			<li> Research Intern in Microsoft Research Asia, 9/2014 - 1/2015 </li>
+			<li> Research Intern in Stanford Graphics Lab, 6/2014 - 8/2014 </li>
+			<li> Research Intern in University of Hong Kong, 7/2013 - 9/2013 </li>
+			</ul>
+		</div>
+		<br>
+	</div>
+</body>
+</html>
+
