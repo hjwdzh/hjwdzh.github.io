@@ -245,4 +245,4 @@ tags: [哲学,形而上学,书评]
 
 ## 总体概括图
 
-![概括图](/2022/03/06/形而上学/Metaphysics-A-very-short-introduction/meta-short-intro.jpeg)
+![概括图](/2022/03/06/哲学/Metaphysics-A-very-short-introduction/meta-short-intro.jpeg)
