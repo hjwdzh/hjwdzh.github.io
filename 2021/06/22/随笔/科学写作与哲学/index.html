@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>科学写作与哲学 | 黄经纬的博客</title>
+    
+    
+        <meta name="keywords" content="随笔,写作" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="此文用于分享一下一个老博士的科学写作经验。本博士写作水平只能说是将将及格，因此不敢舔着脸好为人师，此文仅当做一种信息交流，以供后来者扬弃。场面话言尽于此，下面我将正式从头到尾讲讲我的心得。 哲学原则最初尝试科学写作的人，也大致了解文章分为abstract, introduction, related works, approaches, experiments, (optional) applic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学写作与哲学">
+<meta property="og:url" content="https://hjwdzh.github.io/2021/06/22/%E9%9A%8F%E7%AC%94/%E7%A7%91%E5%AD%A6%E5%86%99%E4%BD%9C%E4%B8%8E%E5%93%B2%E5%AD%A6/index.html">
+<meta property="og:site_name" content="黄经纬的博客">
+<meta property="og:description" content="此文用于分享一下一个老博士的科学写作经验。本博士写作水平只能说是将将及格，因此不敢舔着脸好为人师，此文仅当做一种信息交流，以供后来者扬弃。场面话言尽于此，下面我将正式从头到尾讲讲我的心得。 哲学原则最初尝试科学写作的人，也大致了解文章分为abstract, introduction, related works, approaches, experiments, (optional) applic">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-22T15:54:00.000Z">
+<meta property="article:modified_time" content="2023-03-14T02:16:35.323Z">
+<meta property="article:author" content="黄经纬">
+<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="写作">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="黄经纬的博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">黄经纬的博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            亚里士多德
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/10/10/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%8C%83%E7%95%B4%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">亚里士多德——范畴篇（一）</a></li>  <li class="file"><a href="/2021/10/10/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%8C%83%E7%95%B4%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/">亚里士多德——范畴篇（二）</a></li>  <li class="file"><a href="/2021/10/13/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%8C%83%E7%95%B4%E7%AF%87%E8%A7%A3%E8%AF%BB/">亚里士多德——范畴篇解读</a></li>  <li class="file"><a href="/2021/10/13/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%A7%A3%E9%87%8A%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">亚里士多德——解释篇（一）</a></li>  <li class="file"><a href="/2021/10/17/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%A7%A3%E9%87%8A%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/">亚里士多德——解释篇（二）</a></li>  <li class="file"><a href="/2021/10/18/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%A7%A3%E9%87%8A%E7%AF%87%E8%A7%A3%E8%AF%BB/">亚里士多德——解释篇解读</a></li>  <li class="file"><a href="/2021/10/24/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">亚里士多德——前分析篇（一）</a></li>  <li class="file"><a href="/2021/10/25/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/">亚里士多德——前分析篇（二）</a></li>  <li class="file"><a href="/2021/10/29/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%B8%89%EF%BC%89/">亚里士多德——前分析篇（三）</a></li>  <li class="file"><a href="/2021/11/06/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E5%9B%9B%EF%BC%89/">亚里士多德——前分析篇（四）</a></li>  <li class="file"><a href="/2021/11/08/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%E8%A7%A3%E8%AF%BB/">亚里士多德——前分析篇解读</a></li>  <li class="file"><a href="/2021/11/11/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%90%8E%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">亚里士多德——后分析篇（一）</a></li>  <li class="file"><a href="/2021/12/01/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%90%8E%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/">亚里士多德——后分析篇（二）</a></li>  <li class="file"><a href="/2021/12/19/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%90%8E%E5%88%86%E6%9E%90%E7%AF%87%E8%A7%A3%E8%AF%BB/">亚里士多德——后分析篇解读</a></li>  <li class="file"><a href="/2021/12/28/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%AE%BA%E9%A2%98%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/">亚里士多德——论题篇（一）</a></li>  <li class="file"><a href="/2022/01/07/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%AE%BA%E9%A2%98%E7%AF%87%EF%BC%88%E4%BA%8C%EF%BC%89/">亚里士多德——论题篇（二）</a></li>  <li class="file"><a href="/2022/02/04/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%BE%A9%E8%B0%AC%E7%AF%87/">亚里士多德——辩谬篇</a></li>  <li class="file"><a href="/2022/02/07/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E7%89%A9%E7%90%86%E5%AD%A6%E5%BA%8F/">亚里士多德——物理学序</a></li>  <li class="file"><a href="/2022/02/08/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E3%80%8A%E7%89%A9%E7%90%86%E5%AD%A6%E3%80%8B%EF%BC%88%E6%9C%AC%E5%8E%9F%EF%BC%89/">亚里士多德——前分析篇解读</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            柏拉图
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/05/05/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%94%B3%E8%BE%A9%E7%AF%87/">柏拉图对话录——申辩篇</a></li>  <li class="file"><a href="/2021/05/14/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%85%8B%E9%87%8C%E6%89%98%E7%AF%87/">柏拉图对话录——克里托篇</a></li>  <li class="file"><a href="/2021/05/16/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E5%A4%9A%E7%AF%87/">柏拉图对话录——斐多篇</a></li>  <li class="file"><a href="/2021/06/19/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%8D%A1%E5%B0%94%E7%B1%B3%E5%BE%B7%E7%AF%87/">柏拉图对话录——卡尔米德篇</a></li>  <li class="file"><a href="/2021/06/19/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%8B%89%E5%87%AF%E6%96%AF%E7%AF%87/">柏拉图对话录——拉凯斯篇</a></li>  <li class="file"><a href="/2021/06/19/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%90%95%E8%A5%BF%E6%96%AF%E7%AF%87/">柏拉图对话录——吕西斯篇</a></li>  <li class="file"><a href="/2021/06/20/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%AC%A7%E7%BB%AA%E5%BC%97%E6%B4%9B%E7%AF%87/">柏拉图对话录——欧绪弗洛篇</a></li>  <li class="file"><a href="/2021/06/20/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%B0%8F%E5%B8%8C%E5%BA%87%E4%BA%9A%E7%AF%87/">柏拉图对话录——小希庇亚篇</a></li>  <li class="file"><a href="/2021/06/20/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E4%BC%8A%E5%AE%89%E7%AF%87/">柏拉图对话录——伊安篇</a></li>  <li class="file"><a href="/2021/06/22/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E9%AB%98%E5%B0%94%E5%90%89%E4%BA%9A%E7%AF%87/">柏拉图对话录——高尔吉亚篇</a></li>  <li class="file"><a href="/2021/06/23/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%99%AE%E7%BD%97%E6%B3%B0%E6%88%88%E6%8B%89%E7%AF%87/">柏拉图对话录——普罗泰戈拉篇</a></li>  <li class="file"><a href="/2021/06/25/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%BE%8E%E8%AF%BA%E7%AF%87/">柏拉图对话录——美诺篇</a></li>  <li class="file"><a href="/2021/06/27/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%AC%A7%E7%BB%AA%E5%BE%B7%E8%B0%9F%E7%AF%87/">柏拉图对话录——欧绪德谟篇</a></li>  <li class="file"><a href="/2021/06/28/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%A4%A7%E5%B8%8C%E5%BA%87%E4%BA%9A%E7%AF%87/">柏拉图对话录——大希庇亚篇</a></li>  <li class="file"><a href="/2021/06/30/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%85%8B%E6%8B%89%E5%BA%95%E9%B2%81%E7%AF%87/">柏拉图对话录——克拉底鲁篇</a></li>  <li class="file"><a href="/2021/07/03/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E5%BE%B7%E7%BD%97%E7%AF%87/">柏拉图对话录——斐德罗篇</a></li>  <li class="file"><a href="/2021/07/10/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E4%BC%9A%E9%A5%AE%E7%AF%87/">柏拉图对话录——会饮篇</a></li>  <li class="file"><a href="/2021/08/15/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%90%86%E6%83%B3%E5%9B%BD%E6%91%98%E8%A6%81/">柏拉图对话录——理想国摘要</a></li>  <li class="file"><a href="/2021/08/15/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%90%86%E6%83%B3%E5%9B%BD%E4%B9%8B%E6%AD%A3%E4%B9%89/">柏拉图对话录——理想国之正义</a></li>  <li class="file"><a href="/2021/08/17/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%90%86%E6%83%B3%E5%9B%BD%E4%B9%8B%E5%96%84%E7%9A%84%E5%9E%8B/">柏拉图对话录——理想国之善的型</a></li>  <li class="file"><a href="/2021/08/21/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%B3%B0%E9%98%BF%E6%B3%B0%E5%BE%B7%E7%AF%87/">柏拉图对话录——泰阿泰德篇</a></li>  <li class="file"><a href="/2021/08/23/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%B7%B4%E9%97%A8%E5%B0%BC%E5%BE%B7%E7%AF%87/">柏拉图对话录——巴门尼德篇</a></li>  <li class="file"><a href="/2021/08/25/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%B7%B4%E9%97%A8%E5%B0%BC%E5%BE%B7%E7%AF%87%E7%BB%AD%E7%AF%87/">柏拉图对话录——巴门尼德篇续篇</a></li>  <li class="file"><a href="/2021/09/04/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%99%BA%E8%80%85%E7%AF%87/">柏拉图对话录——智者篇</a></li>  <li class="file"><a href="/2021/09/06/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%94%BF%E6%B2%BB%E5%AE%B6%E7%AF%87/">柏拉图对话录——政治家篇</a></li>  <li class="file"><a href="/2021/09/08/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E8%8E%B1%E5%B8%83%E7%AF%87/">柏拉图对话录——斐莱布篇</a></li>  <li class="file"><a href="/2021/09/12/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E8%8E%B1%E5%B8%83%E7%AF%87%E7%BB%AD%E7%AF%87/">柏拉图对话录——斐莱布篇续篇</a></li>  <li class="file"><a href="/2021/09/14/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E8%92%82%E8%BF%88%E6%AC%A7%E7%AF%87/">柏拉图对话录——蒂迈欧篇</a></li>  <li class="file"><a href="/2021/09/25/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%B3%95%E7%AF%87/">柏拉图对话录——法篇</a></li>  <li class="file"><a href="/2021/10/06/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%91%98%E8%A6%81/">柏拉图对话录——摘要</a></li>  <li class="file"><a href="/2021/10/06/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%80%9D%E6%83%B3%E8%AF%A6%E8%A7%A3/">柏拉图对话录——思想详解</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            随笔
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/05/02/%E9%9A%8F%E7%AC%94/%E8%AE%B0%E5%BD%95%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3%E7%9A%84%E8%B5%B7%E5%9B%A0/">记录哲学思想的起因</a></li>  <li class="file active"><a href="/2021/06/22/%E9%9A%8F%E7%AC%94/%E7%A7%91%E5%AD%A6%E5%86%99%E4%BD%9C%E4%B8%8E%E5%93%B2%E5%AD%A6/">科学写作与哲学</a></li>  <li class="file"><a href="/2021/11/14/%E9%9A%8F%E7%AC%94/CVPR%209999%20Best%20Paper%E2%80%94%E2%80%94%E3%80%8A%E4%B8%80%E7%A7%8D%E5%8A%A0%E8%BE%A3%E6%A4%92%E7%9A%84%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B%E3%80%8B/">CVPR 9999 Best Paper——《一种加辣椒的番茄炒蛋》</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-随笔/科学写作与哲学" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E5%86%99%E4%BD%9C/" rel="tag">写作</a>, <a class="tag-link-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2021/06/22/%E9%9A%8F%E7%AC%94/%E7%A7%91%E5%AD%A6%E5%86%99%E4%BD%9C%E4%B8%8E%E5%93%B2%E5%AD%A6/">
+            <time datetime="2021-06-22T15:54:00.000Z" itemprop="datePublished">2021-06-22</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/随笔/科学写作与哲学.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/随笔/科学写作与哲学.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/随笔/科学写作与哲学.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            科学写作与哲学
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%B2%E5%AD%A6%E5%8E%9F%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">哲学原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E5%A4%A7%E5%86%99%E4%BD%9C%E8%B0%AC%E8%AF%AF"><span class="toc-number">2.</span> <span class="toc-text">几大写作谬误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9F%A5%E8%AF%86%E7%9A%84%E5%B7%AE%E5%BC%82%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="toc-number">3.</span> <span class="toc-text">知识的差异与联系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E9%99%90%E6%80%A7%E3%80%81%E5%88%86%E7%B1%BB%E5%92%8C%E5%B1%82%E6%AC%A1%E5%8C%96"><span class="toc-number">4.</span> <span class="toc-text">有限性、分类和层次化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%82%E6%AC%A1%E5%8C%96%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">层次化的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%81%8D%E6%80%A7%E5%8E%9F%E5%88%99"><span class="toc-number">6.</span> <span class="toc-text">普遍性原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%B8%85%E6%99%B0%E5%92%8C%E5%BF%85%E7%84%B6%E6%80%A7%E5%8E%9F%E5%88%99"><span class="toc-number">7.</span> <span class="toc-text">前提清晰和必然性原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80"><span class="toc-number">8.</span> <span class="toc-text">语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B"><span class="toc-number">9.</span> <span class="toc-text">样例</span></a></li></ol>
+                </div>
+            
+        
+        
+            <p>此文用于分享一下一个老博士的科学写作经验。本博士写作水平只能说是将将及格，因此不敢舔着脸好为人师，此文仅当做一种信息交流，以供后来者扬弃。场面话言尽于此，下面我将正式从头到尾讲讲我的心得。</p>
+<h2 id="哲学原则"><a href="#哲学原则" class="headerlink" title="哲学原则"></a>哲学原则</h2><p>最初尝试科学写作的人，也大致了解文章分为abstract, introduction, related works, approaches, experiments, (optional) applications, conclusion 这几章。但是具体写起来，科研小白们，包括我自己一开始，都是一样无从下手的。经过这么多年混下来，终于初悟此道。</p>
+<p>一个科研小白，最常用的思维是线性而非层次化的。因此，他对于项目的理解往往是我干了A所以有a，然后干了B所以有b，然后我又干了CDE，最后我的系统是ABCDE，发现厉害了。然后谈related work，ABCDE是related work，了事了。对，你是厉害了和了事了，但听者什么也没学到。一个好的论文，原则是用最少的文字最精准的传达关于项目的知识。</p>
+<p>小白可能不服气——我都说了ABCDE了，该说的都说了，不然你让我怎么描述知识呀？！这时，我极其想给他推荐几篇柏拉图和亚里士多德的作品，不过我就简单搬运一下：</p>
+<ol>
+<li><a href="/2021/08/21/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%B3%B0%E9%98%BF%E6%B3%B0%E5%BE%B7%E7%AF%87/"><strong>Theaetetus</strong></a>, 知识是正确的见解加与其他易混淆事物差异的解释。</li>
+<li><a href="/2021/09/08/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E8%8E%B1%E5%B8%83%E7%AF%87/"><strong>Philebus</strong></a>&#x2F;<a href="/2021/09/14/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E8%92%82%E8%BF%88%E6%AC%A7%E7%AF%87/"><strong>Timaeus</strong></a>，无限的多是一种混沌，有限的一是美的。</li>
+<li><a href="/2021/09/06/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%94%BF%E6%B2%BB%E5%AE%B6%E7%AF%87/"><strong>Statesman</strong></a>，本质的划分导致精确的概念的讨论。</li>
+<li><a href="/2021/10/13/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E8%8C%83%E7%95%B4%E7%AF%87%E8%A7%A3%E8%AF%BB/"><strong>Categories</strong></a>，普遍的还是个例的，必然的还是偶然的？</li>
+<li><a href="/2021/11/08/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%89%8D%E5%88%86%E6%9E%90%E7%AF%87%E8%A7%A3%E8%AF%BB/"><strong>Prior Analytics</strong></a>, 三段论。</li>
+<li><a href="/2021/11/11/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%90%8E%E5%88%86%E6%9E%90%E7%AF%87%EF%BC%88%E4%B8%80%EF%BC%89/"><strong>Posterior Analytics</strong></a>，证明是从在先的必然的结论出发的三段论。定义是本源实体的最先描述。<br>由此，ABCDE模式的几个显著缺陷就明了了。一方面，这虽然详述了你的方案，但读者并不知道它与他所知道事物的联系，他有可能认为这就是某些已知的知识，或者认为这就是天方夜谭，不知所以，总之没有建立与他人知识体系的联系。二方面，东西太多，虽然还未达到无限，但已经非常繁琐，非常没有美感，别人记不住，也不欣赏。三方面，人类常说“知识树”，因为知识是一种树状层次化结构，ABCDE像是粗暴的在树旁边竖了根电线杆，让人反胃。另外，ABCDE可能人家觉得不本质或不必然，感觉你没逻辑。</li>
+</ol>
+<p>概括一下写作几大原则：</p>
+<ol>
+<li>差异联系原则</li>
+<li>有限性原则</li>
+<li>层次化原则</li>
+<li>普遍性原则</li>
+<li>必然性原则</li>
+<li>前提明晰原则</li>
+</ol>
+<h2 id="几大写作谬误"><a href="#几大写作谬误" class="headerlink" title="几大写作谬误"></a>几大写作谬误</h2><p>既然有了哲学指导，违反哲学原则的几大谬误应运而生。</p>
+<ol>
+<li>只关注自己的工作或别人的工作——在非related work里只说自己干了啥，在related work里只说别人干了啥。（违反差异联系原则，让人觉得你在自说自话）</li>
+<li>详尽列举自己的做法，列举了一长串；或不列自己做法，直接上一个雷人的大描述。（违反有限性原则，让人听着头昏。就一句话而无细节，又让人感到空泛茫然。）</li>
+<li>该说大事的时候沉浸在细节的描述。（违反层次化原则，让人不知道你在讲什么）</li>
+<li>过度把自己的个例说成普适性的，把自己闪光的普适性方法说成了一个小例子。（违反普遍性原则，要么错误包装，要么没有正确体现价值）</li>
+<li>说我怎么做，但没说为啥我要这么做。（违反必然性原则，人家为啥要按你说的做，傲慢）</li>
+<li>非必然三段论逻辑（违反前提明晰原则，总觉得你这么做不solid）</li>
+</ol>
+<p>该吐槽的都吐槽完了，下面便是每个原则在各段中的体现，我们一一分析。</p>
+<h2 id="知识的差异与联系"><a href="#知识的差异与联系" class="headerlink" title="知识的差异与联系"></a>知识的差异与联系</h2><p>Related Works模块的设计非常好的体现了这个宗旨——你不说别人做了啥，我咋知道你做了啥？因此，最明显的体现便是Related Works。而其正确的写作思路应当是别人做了啥，有啥问题，我们和他这方面不一样，正好解决了这样的问题。相当一部分写作者，只写别人干了啥，没写我和他哪里不一样，这种作者就是没有理解Related work章节设计的初衷——Related works是从别人的工作中对比着来介绍自己的工作。</p>
+<p>除了显性的Related works，知识的差异和联系原则可以在各个地方被使用。比如Introduction，不能直接说我们通过做什么把事情做牛了，而应当说这个事情就这么多做法，挂在了哪里，我们在挂掉的地方做了什么事，从而把事情做牛了。我们甚至不能只说我们要做什么事情，我们还得说这事情和其他事情有啥差别。比如Approach介绍创新方法，也不是ABCDE的平铺直叙。应该说在设计A时，直觉上容易想到A1, A2, A3几种方法但都因为什么而不work，我们的A和这些方法的区别是XXX（真实的创新），从而能work。比如在实验中人们长考虑使用而我们不使用的数据或方法，我们也要说这实验看上去可以做，但由于XXX的点和人们预想的不同，这实验我们不做。</p>
+<p><strong>我的原则是，凡是哪个地方存在某种似是而非的替代方法或解释或实验，我们都必须论述他们并强调他们的某一个差异点，从而得出我们的创新方法、数学模型、或实验方案。</strong></p>
+<h2 id="有限性、分类和层次化"><a href="#有限性、分类和层次化" class="headerlink" title="有限性、分类和层次化"></a>有限性、分类和层次化</h2><p>我们时刻要记住有限性原则，有限性即时在任何一个尺度上我们都不能给读者暴露出过多平行的概念。然而做一个项目，其要点确实可能多如牛毛，所以层次化的写作对于有限性的展示知识至关重要。科学论文实质上无处不体现其有限性和层次化：</p>
+<p>整体框架是有限的几个段落，abstract&#x2F;introduction&#x2F;relatedwork&#x2F;approach&#x2F;experiment。</p>
+<p>Introduction就干有限的四件事：先说问题重要，二说现有方法垃圾，三说我们方法牛逼，四说我们实验牛逼。related works干若干件事，简单点说就是把related works按照几类不同联系方式进行分组，每组分别讨论。Approach需要把自己的创新方法分模块介绍。Experiments需要把自己试验按照不同的目的或结论类型分类。</p>
+<p>然而层次化远没有就此结束——比如introduction说问题重要，并不是只说我们做的三维重建重要。应该说三维重建可以分为是否带range sensor，不带range sensor的是否是多目的，多目里面是物体还是场景的，直到层次化并向下划分到那个你所需要去做的问题的最大集合为止。说现有方法垃圾也是这样，得先说现有方法从哪几个方向来解决哪些挑战，每个挑战又有哪些方法从哪个角度解决，最后才能说他们都是垃圾。</p>
+<p>Approach也是如此，大模块里分小模块，小模块里分更小的模块，最后要保证每个模块底下的小模块或者最终的技术点不能太多太杂。一个人的方法如果一招毙命，那就写一句话了事。如果方法稍多，就要分模块在subsection描述，如果某模块太多就要分paragraph描述，如果还不够用就将approach拆分成多个section，再写一个section叫overview。</p>
+<h2 id="层次化的应用"><a href="#层次化的应用" class="headerlink" title="层次化的应用"></a>层次化的应用</h2><p>既然一个优秀的文章应当是层次化的，那么我们写作如何做到层次化呢？<strong>我有两招——自顶向下的划分法，和自底向上的归纳法。</strong></p>
+<p>当我想描述某件事，结果显而易见的找到了简短的一句话就描述它时，我就要非常警惕，因为我所描述的可能是一个过于普遍而不精确的事情。比如我做了个牛逼的方法，跟别人说我是搞三维建模的（introduction第一段）。这就是自顶向下划分法的重要时刻。我要思考三维建模分哪几类，我是哪一类，如果还不够充实，就需要再次划分。学术论文里无需严格按照《Statesman》里所说的一定是本性的穷尽的二元划分；他的原则是在所预期的长度内进行最优的本性划分。</p>
+<p>相反，当我想描述我的工作，事情多如牛毛，我就要把事情列一下，找共性，进行归纳。共性具体可以指相似的目的、方法、流程模块。若共性归纳了一波，发现不同的共性还是太多，那就需要进一步归纳不同共性之间的相似性，直到满足每个模块3-5个子模块的原则。</p>
+<h2 id="普遍性原则"><a href="#普遍性原则" class="headerlink" title="普遍性原则"></a>普遍性原则</h2><p>描述一件事，就应当描述的恰当好处。比如有人问你，什么玩意儿爱吃肉，不应当回答回答老虎也不应当回答动物，应当回答食肉动物。</p>
+<p>例如有个人做了个牛逼方法，明明适用于大场景的室内环境，他说自己适用于小屋子，那就把自己的价值说小了。如果他说适用于各种环境，读者就会吐槽他，这样的假设根本不适用于室外环境。除了适用范围，方法也是如此。例如某个模块，我们明明可以适配一类方法，那就不能说我们就用了XX方法。别人会觉得XX方法有很多局限性，你这个方法有问题啊！事实上我们只要是满足性质A的方法都可以用，XX方法是性质B有问题，所以本质上我们的方法没问题。但正因为我们描述时错误的失去了普遍性，导致自己把自己写出了问题。</p>
+<p><strong>我的原则是，在论文的每一句话里，都应当严格的保证主语和宾语所应当具有的普遍性的度拿捏的恰到好处，不过分吹牛，也不贬低自己，不卑不亢。</strong></p>
+<h2 id="前提清晰和必然性原则"><a href="#前提清晰和必然性原则" class="headerlink" title="前提清晰和必然性原则"></a>前提清晰和必然性原则</h2><p>我读了一些学生写的论文，发现逻辑总是不让人满意，断断续续，最后发现主要是没有用必然三段论去证明自己所写的东西的实在性。</p>
+<p>v0：我们在系统里用了个牛逼的A模型。听上去很好，其实毫无信息量和逻辑。<br>v1: 因为数学模型A可以导致良好的位姿预测，所以我们在系统的某个模块用了它。听上去没毛病吧？但是谁说了系统需要良好的位姿预测呢？<br>v2: 我们系统需要准确的位姿，正巧数学模型A可以满足我们的需要，所以我们用上了它（实然三段论）。没毛病了吧？但是谁说一定要用数学模型A呢？<br>v3: 我们系统需要准确、快速、大场景可泛化的位姿，行业一类准确模型不快速，一类快速问题只适用于小场景，只有最近某个方法A正好都适用，所以我们在系统里使用了A（必然三段论）。</p>
+<p>v0没有逻辑，v1逻辑缺失，v2逻辑不必然，v3才是完备的证明逻辑。</p>
+<p>当然，我们的科学写作并不是通篇严谨的必然三段论证明，因为那样就太长了，同时也违反了有限性原则，因为形成逻辑的命题数量本身也应当遵循有限性原则。因此，重要的命题一定要使用v3，无关证明的可以直接使用v0这种陈述方式，而大多数情况不会过于无关紧要，可以采取v1的省略三段论或者v2的实然三段论模式。</p>
+<p>总结一下，过量的v0和v1会导致文章不流畅，过量的v2, v3会导致文章冗余。但是对于重要的证明，一定要采取v2甚至v3的论述方式，才能把最重要的论点用最强的证明逻辑扎在读者心里。</p>
+<h2 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h2><p>最后讲讲语言。其实英语不需要太好，事实上我的英语可以说是属于非常不好的那一类。但这顶多会影响写作的优美度，却不会影响到写作的合格度。</p>
+<p>我认为语言无非就是三个原则——长度最小化，信息最大化，描述真实化。用最少的长度，描述最大的信息量，并保证一定处于正确的范畴中。只要满足三个原则，这篇写作就是合格的。</p>
+<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><p>做人不能太严肃，我写了一篇样例，仅供大家玩笑，为论文实操，九阴真经下卷。</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2021/06/23/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%99%AE%E7%BD%97%E6%B3%B0%E6%88%88%E6%8B%89%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    柏拉图对话录——普罗泰戈拉篇
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2021/06/22/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E9%AB%98%E5%B0%94%E5%90%89%E4%BA%9A%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">柏拉图对话录——高尔吉亚篇</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            黄经纬 &copy; 2023 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
