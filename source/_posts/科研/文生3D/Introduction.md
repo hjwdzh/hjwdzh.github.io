@@ -123,3 +123,23 @@ Text can be achieved from an image via DreamBooth/Textual Inversion ([**3DFuse**
 There are some other approaches to straightforwardly hacking the content, including direct texture painting ([**TEXTure**](https://arxiv.org/abs/2302.01721), [**Text2Tex**](https://daveredrum.github.io/Text2Tex), [**TexFusion**](https://research.nvidia.com/labs/toronto-ai/publication/2023_iccv_texfusion/)), direct geometry fusion ([**Scenescape**](https://scenescape.github.io), [**Text2Room**](https://github.com/lukasHoel/text2room)), or iteratively update dataset to achieve the editing goal ([**Control-4D**](https://control4darxiv.github.io), [**InstructNerf2Nerf**](https://instruct-nerf2nerf.github.io)).
 
 Besides generating 3D content, a set of methods aim to understand 3D with foundation models that are worth mentioning, *since I believe understanding can reversely help generation, e.g., by fine-grained condition on scene level*. [**LeRF**](https://www.lerf.io/) reconstruct the nerf with language features obtained from 2D fundation models. [**Cap3d**](https://arxiv.org/pdf/2306.07279.pdf) renders multiple views, captions them one by one with BLIP, filters wrong captions with CLIP, and summarizes them with LLM. [**SATR**](https://arxiv.org/abs/2304.04909) aggregate multiview GLIP features into 3D for semantic segmentation. [**3D-LLM**](https://arxiv.org/pdf/2307.12981.pdf) and [**Point-LLM**](https://arxiv.org/abs/2308.16911) extract multiview features for language-vision-models to caption.
+
+## Potential Approach
+Given existing ideas, I would like to design a system incorporate all valuable techniques.
+1. **3D Initialization stage.** Given text/image as input, shall we initialize a shape with 3D networks? (Shap-E/Point-E)? If so, it will be the first step.
+2. **3D Representation.** Is multi-stage necessary (e.g. NeRF + DMTet + Mesh-Refine)? What is the best architecture considering optimization quality, efficiency, and robustness? (Instant-NGP, Gaussian Splatting, Triplane, DMTet)
+3. **Choice of diffuser.** Controlnet/Prompt-free diffuser.
+4. **Choice of SDS.** Take NFSD and check whether VSD/BSD is still necessary.
+5. **Geometry SDS.** Is coordinatemap/normal/depth worth to be finetuned by a diffuser to provide SDS that improves 3D consistency? (SweetDreamer, HumanNorm.)
+6. **NVS Diffusion SDS.** Check MVDream/SyncDreamer/Wonder3D and figure out how they work, and how they help the consistency of 3D optimization.
+7. **Geometry supervision.** Check whether depth/pseudo-depth/shape regularization from 3D initialization can help the geometry.
+8. **Image supervision.** Check whether image diffusion is still enhancing the results as stated in Text2Mesh.
+9. **Training Scheme.** Check whether gradient clip (PCG3D) and timestep annealing (HiFA) is still necessary.
+10. **Progressive zoom-in** Check whether progressive zoom-in helps the quality (DreamCraft3D).
+11. **Texture-space image-to-image diffusion** May enhance the details in one post processing step.
+
+Some ideas are entangled with each other, and I would like to start from easy experiments.
+- **Image generation SDS** Check idea 3/4.
+- **Texture generation SDS** Check idea 8/10/9.
+- **3D Generation** Check idea 2/6/5/7.
+- **Pre-post processing** Check idea 1/11.
