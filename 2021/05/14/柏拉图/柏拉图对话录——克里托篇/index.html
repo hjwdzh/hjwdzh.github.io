@@ -98,7 +98,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -117,10 +117,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -170,7 +170,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>Categorias</span>
+            <span>categories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -328,6 +328,24 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
+                            科研
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            文生3D
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
                             随笔
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/05/02/%E9%9A%8F%E7%AC%94/%E8%AE%B0%E5%BD%95%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3%E7%9A%84%E8%B5%B7%E5%9B%A0/">记录哲学思想的起因</a></li>  <li class="file"><a href="/2021/06/22/%E9%9A%8F%E7%AC%94/%E7%A7%91%E5%AD%A6%E5%86%99%E4%BD%9C%E4%B8%8E%E5%93%B2%E5%AD%A6/">科学写作与哲学</a></li>  <li class="file"><a href="/2021/11/14/%E9%9A%8F%E7%AC%94/CVPR%209999%20Best%20Paper%E2%80%94%E2%80%94%E3%80%8A%E4%B8%80%E7%A7%8D%E5%8A%A0%E8%BE%A3%E6%A4%92%E7%9A%84%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B%E3%80%8B/">CVPR 9999 Best Paper——《一种加辣椒的番茄炒蛋》</a></li>  </ul> 
@@ -463,7 +481,7 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catálogo</strong>
+                <strong class="toc-title">Catalogue</strong>
                     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%8B%E9%87%8C%E6%89%98%E7%9A%84%E5%8A%9D%E8%AF%B4"><span class="toc-number">2.</span> <span class="toc-text">克里托的劝说</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E5%8F%8D%E9%A9%B3"><span class="toc-number">3.</span> <span class="toc-text">苏格拉底的反驳</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E8%A7%82%E7%82%B9"><span class="toc-number">4.</span> <span class="toc-text">我的观点</span></a></li></ol>
                 </div>
             
@@ -506,7 +524,7 @@
 <nav id="article-nav">
     
         <a href="/2021/05/16/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%96%90%E5%A4%9A%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más nuevo</strong>
+            <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
                     柏拉图对话录——斐多篇
@@ -516,7 +534,7 @@
     
     
         <a href="/2021/05/05/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E7%94%B3%E8%BE%A9%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más viejo</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">柏拉图对话录——申辩篇</div>
         </a>
     

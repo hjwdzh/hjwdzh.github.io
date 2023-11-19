@@ -98,7 +98,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -117,10 +117,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -170,7 +170,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>Categorias</span>
+            <span>categories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -328,6 +328,24 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
+                            科研
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            文生3D
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
                             随笔
                         </a>
                          <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/05/02/%E9%9A%8F%E7%AC%94/%E8%AE%B0%E5%BD%95%E5%93%B2%E5%AD%A6%E6%80%9D%E6%83%B3%E7%9A%84%E8%B5%B7%E5%9B%A0/">记录哲学思想的起因</a></li>  <li class="file"><a href="/2021/06/22/%E9%9A%8F%E7%AC%94/%E7%A7%91%E5%AD%A6%E5%86%99%E4%BD%9C%E4%B8%8E%E5%93%B2%E5%AD%A6/">科学写作与哲学</a></li>  <li class="file"><a href="/2021/11/14/%E9%9A%8F%E7%AC%94/CVPR%209999%20Best%20Paper%E2%80%94%E2%80%94%E3%80%8A%E4%B8%80%E7%A7%8D%E5%8A%A0%E8%BE%A3%E6%A4%92%E7%9A%84%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B%E3%80%8B/">CVPR 9999 Best Paper——《一种加辣椒的番茄炒蛋》</a></li>  </ul> 
@@ -463,7 +481,7 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catálogo</strong>
+                <strong class="toc-title">Catalogue</strong>
                     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9"><span class="toc-number">2.</span> <span class="toc-text">内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%9D%E8%AF%BA%E7%9A%84%E8%AE%BA%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text">芝诺的论点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%AF%E7%B2%B9%E5%9E%8B%E4%B8%8E%E9%9D%9E%E7%BA%AF%E7%B2%B9%E7%9A%84%E7%89%A9"><span class="toc-number">2.2.</span> <span class="toc-text">纯粹型与非纯粹的物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%9B%B8%E4%BC%BC%E4%B8%8E%E4%B8%8D%E7%9B%B8%E4%BC%BC%E7%A1%AE%E5%AE%9E%E4%B8%8D%E7%9B%B8%E5%AE%B9%E2%80%94%E2%80%94%E7%BF%BB%E8%AF%91%E4%B8%80%E4%B8%8B%EF%BC%9A"><span class="toc-number">2.3.</span> <span class="toc-text">2.1 相似与不相似确实不相容——翻译一下：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-p-q%E5%8F%AF%E4%BB%A5%E5%90%8C%E6%97%B6%E7%9B%B8%E4%BC%BC%E6%88%96%E8%80%85%E4%B8%8D%E7%9B%B8%E4%BC%BC%EF%BC%88%E4%BB%A4M-%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9%EF%BC%8CT-%E4%BC%9A%E5%86%99%E5%AD%97%EF%BC%8Cp-%E4%BA%BA%EF%BC%8Cq-%E7%8C%B4%E5%AD%90%EF%BC%89%E3%80%82"><span class="toc-number">2.4.</span> <span class="toc-text">2.2 p, q可以同时相似或者不相似（令M&#x3D;哺乳动物，T&#x3D;会写字，p&#x3D;人，q&#x3D;猴子）。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E8%A7%82%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">我的观点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%8F%E6%8B%89%E5%9B%BE%E7%9A%84%E5%9E%8B%E8%AE%BA"><span class="toc-number">3.1.</span> <span class="toc-text">柏拉图的型论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%B4%E9%97%A8%E5%B0%BC%E5%BE%B7%E7%9A%84%E9%80%90%E6%9D%A1%E5%8F%8D%E5%87%BB"><span class="toc-number">3.2.</span> <span class="toc-text">巴门尼德的逐条反击</span></a></li></ol></li></ol>
                 </div>
             
@@ -522,7 +540,7 @@
 <nav id="article-nav">
     
         <a href="/2021/08/25/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E5%B7%B4%E9%97%A8%E5%B0%BC%E5%BE%B7%E7%AF%87%E7%BB%AD%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más nuevo</strong>
+            <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
                     柏拉图对话录——巴门尼德篇续篇
@@ -532,7 +550,7 @@
     
     
         <a href="/2021/08/21/%E6%9F%8F%E6%8B%89%E5%9B%BE/%E6%9F%8F%E6%8B%89%E5%9B%BE%E5%AF%B9%E8%AF%9D%E5%BD%95%E2%80%94%E2%80%94%E6%B3%B0%E9%98%BF%E6%B3%B0%E5%BE%B7%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más viejo</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">柏拉图对话录——泰阿泰德篇</div>
         </a>
     
