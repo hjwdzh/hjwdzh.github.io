@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://hjwdzh.github.io/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/pipeline-3dgen.png">
 <meta property="og:image" content="http://hjwdzh.github.io/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/pipeline-3doptim.png">
 <meta property="article:published_time" content="2023-11-18T03:00:00.000Z">
-<meta property="article:modified_time" content="2023-11-19T14:16:04.189Z">
+<meta property="article:modified_time" content="2023-11-21T14:32:19.980Z">
 <meta property="article:author" content="黄经纬">
 <meta property="article:tag" content="科研">
 <meta property="article:tag" content="文生3D">
@@ -101,7 +101,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -120,10 +120,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'pos',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'kategori',
+            TAGS: 'tag',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -156,7 +156,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
     </div>
 
                 </td>
@@ -173,7 +173,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>kategori</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -340,7 +340,7 @@
                             &nbsp;
                             文生3D
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -484,7 +484,7 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catalogue</strong>
+                <strong class="toc-title">Catálogo</strong>
                     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">2.</span> <span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Input"><span class="toc-number">2.1.</span> <span class="toc-text">Input</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3D-representation"><span class="toc-number">2.2.</span> <span class="toc-text">3D representation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Main-problem-formulation"><span class="toc-number">2.3.</span> <span class="toc-text">Main problem formulation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Recent-Approaches"><span class="toc-number">3.</span> <span class="toc-text">Recent Approaches</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3D-Generation"><span class="toc-number">3.1.</span> <span class="toc-text">3D Generation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2D-Novel-View-Synthesis"><span class="toc-number">3.2.</span> <span class="toc-text">2D Novel View Synthesis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3D-Optimization"><span class="toc-number">3.3.</span> <span class="toc-text">3D Optimization</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Loss"><span class="toc-number">3.3.1.</span> <span class="toc-text">Loss</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3D-representation-1"><span class="toc-number">3.3.2.</span> <span class="toc-text">3D representation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#View-consistency"><span class="toc-number">3.3.3.</span> <span class="toc-text">View consistency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Condition-Hack"><span class="toc-number">3.3.4.</span> <span class="toc-text">Condition Hack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Training-tricks"><span class="toc-number">3.3.5.</span> <span class="toc-text">Training tricks</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Other-approaches"><span class="toc-number">3.4.</span> <span class="toc-text">Other approaches</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Potential-Approach"><span class="toc-number">4.</span> <span class="toc-text">Potential Approach</span></a></li></ol>
                 </div>
             
@@ -571,21 +571,21 @@
 <p><strong>Progressive High Resolution.</strong> Coarse-to-fine is an important idea. For 3D representation, it is a common idea to start from a coarse shape (from Point-E) or optimize one (NeRF) followed by mesh refinement (<a target="_blank" rel="noopener" href="https://research.nvidia.com/labs/dir/magic3d/"><strong>Magic3D</strong></a>) or DMTet (<a target="_blank" rel="noopener" href="https://fantasia3d.github.io/"><strong>Fantasia3D</strong></a>). <a target="_blank" rel="noopener" href="https://github.com/Texaser/MTN"><strong>MTN</strong></a> directly optimizes multi-scale triplane NeRF. For colors, progressive zoom-in is commonly adopted (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2308.03610"><strong>Avatarverse</strong></a>, <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.16818"><strong>DreamCraft3D</strong></a>)), while <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2308.03610"><strong>Avatarverse</strong></a> probably use different text condition from different view given known semantic parts.</p>
 <h3 id="Other-approaches"><a href="#Other-approaches" class="headerlink" title="Other approaches"></a>Other approaches</h3><p>There are some other approaches to straightforwardly hacking the content, including direct texture painting (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2302.01721"><strong>TEXTure</strong></a>, <a target="_blank" rel="noopener" href="https://daveredrum.github.io/Text2Tex"><strong>Text2Tex</strong></a>, <a target="_blank" rel="noopener" href="https://research.nvidia.com/labs/toronto-ai/publication/2023_iccv_texfusion/"><strong>TexFusion</strong></a>), direct geometry fusion (<a target="_blank" rel="noopener" href="https://scenescape.github.io/"><strong>Scenescape</strong></a>, <a target="_blank" rel="noopener" href="https://github.com/lukasHoel/text2room"><strong>Text2Room</strong></a>), or iteratively update dataset to achieve the editing goal (<a target="_blank" rel="noopener" href="https://control4darxiv.github.io/"><strong>Control-4D</strong></a>, <a target="_blank" rel="noopener" href="https://instruct-nerf2nerf.github.io/"><strong>InstructNerf2Nerf</strong></a>).</p>
 <p>Besides generating 3D content, a set of methods aim to understand 3D with foundation models that are worth mentioning, <em>since I believe understanding can reversely help generation, e.g., by fine-grained condition on scene level</em>. <a target="_blank" rel="noopener" href="https://www.lerf.io/"><strong>LeRF</strong></a> reconstruct the nerf with language features obtained from 2D fundation models. <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2306.07279.pdf"><strong>Cap3d</strong></a> renders multiple views, captions them one by one with BLIP, filters wrong captions with CLIP, and summarizes them with LLM. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.04909"><strong>SATR</strong></a> aggregate multiview GLIP features into 3D for semantic segmentation. <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2307.12981.pdf"><strong>3D-LLM</strong></a> and <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2308.16911"><strong>Point-LLM</strong></a> extract multiview features for language-vision-models to caption.</p>
-<h2 id="Potential-Approach"><a href="#Potential-Approach" class="headerlink" title="Potential Approach"></a>Potential Approach</h2><p>Given existing ideas, I would like to design a system incorporate all valuable techniques.</p>
+<h2 id="Potential-Approach"><a href="#Potential-Approach" class="headerlink" title="Potential Approach"></a>Potential Approach</h2><p>Given existing ideas, I would like to design a system that incorporates all valuable techniques.</p>
 <ol>
 <li><strong>3D Initialization stage.</strong> Given text&#x2F;image as input, shall we initialize a shape with 3D networks? (Shap-E&#x2F;Point-E)? If so, it will be the first step.</li>
 <li><strong>3D Representation.</strong> Is multi-stage necessary (e.g. NeRF + DMTet + Mesh-Refine)? What is the best architecture considering optimization quality, efficiency, and robustness? (Instant-NGP, Gaussian Splatting, Triplane, DMTet)</li>
 <li><strong>Choice of diffuser.</strong> Controlnet&#x2F;Prompt-free diffuser.</li>
 <li><strong>Choice of SDS.</strong> Take NFSD and check whether VSD&#x2F;BSD is still necessary.</li>
-<li><strong>Geometry SDS.</strong> Is coordinatemap&#x2F;normal&#x2F;depth worth to be finetuned by a diffuser to provide SDS that improves 3D consistency? (SweetDreamer, HumanNorm.)</li>
+<li><strong>Geometry SDS.</strong> Is coordinate map&#x2F;normal&#x2F;depth worth being finetuned by a diffuser to provide SDS that improves 3D consistency? (SweetDreamer, HumanNorm.)</li>
 <li><strong>NVS Diffusion SDS.</strong> Check MVDream&#x2F;SyncDreamer&#x2F;Wonder3D and figure out how they work, and how they help the consistency of 3D optimization.</li>
 <li><strong>Geometry supervision.</strong> Check whether depth&#x2F;pseudo-depth&#x2F;shape regularization from 3D initialization can help the geometry.</li>
 <li><strong>Image supervision.</strong> Check whether image diffusion is still enhancing the results as stated in Text2Mesh.</li>
 <li><strong>Training Scheme.</strong> Check whether gradient clip (PCG3D) and timestep annealing (HiFA) is still necessary.</li>
 <li><strong>Progressive zoom-in</strong> Check whether progressive zoom-in helps the quality (DreamCraft3D).</li>
-<li><strong>Texture-space image-to-image diffusion</strong> May enhance the details in one post processing step.</li>
+<li><strong>Texture-space image-to-image diffusion</strong> May enhance the details in one post-processing step.</li>
 </ol>
-<p>Some ideas are entangled with each other, and I would like to start from easy experiments.</p>
+<p>Some ideas are entangled with each other, and I would like to start with easy experiments.</p>
 <ul>
 <li><strong>Image generation SDS</strong> Check idea 3&#x2F;4.</li>
 <li><strong>Texture generation SDS</strong> Check idea 8&#x2F;10&#x2F;9.</li>
@@ -604,9 +604,18 @@
     
 <nav id="article-nav">
     
+        <a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Lebih baru</strong>
+            <div class="article-nav-title">
+                
+                    Single View SDS
+                
+            </div>
+        </a>
+    
     
         <a href="/2023/06/26/%E4%BD%9B%E5%AD%A6/%E4%BD%9B%E5%AD%A6%E9%97%B2%E8%B0%88%E2%80%94%E2%80%94%E6%B4%9E%E8%A7%81/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
+            <strong class="article-nav-caption">Lebih Tua</strong>
             <div class="article-nav-title">佛学闲谈——洞见</div>
         </a>
     

@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,10 +111,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'pos',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'kategori',
+            TAGS: 'tag',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -147,7 +147,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
     </div>
 
                 </td>
@@ -164,7 +164,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>kategori</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -331,7 +331,7 @@
                             &nbsp;
                             文生3D
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -416,6 +416,110 @@
 </aside>
             
             <section id="main">
+        <article id="post-科研/文生3D/Single-view-sds" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/">科研</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/">文生3D</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%96%87%E7%94%9F3D/" rel="tag">文生3D</a>, <a class="tag-link-link" href="/tags/%E7%A7%91%E7%A0%94/" rel="tag">科研</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">
+            <time datetime="2023-11-21T15:00:00.000Z" itemprop="datePublished">2023-11-21</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/科研/文生3D/Single-view-sds.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/科研/文生3D/Single-view-sds.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/科研/文生3D/Single-view-sds.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>According to my <a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/"><strong>introduction</strong></a>, the simplest experiment to start with is the single-view text-to-image experiment using the stochastic optimization method. The reason that we want to optimize rather than denoise is that we extend to 3D, we need to seamlessly generate textures from multiple views and stochastic optimization appears to be the most promising method. In this article, I am going to investigate all the details related to the optimization process.</p>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><h3 id="Formulation"><a href="#Formulation" class="headerlink" title="Formulation"></a>Formulation</h3><p>Given a view parameterized by $\theta$, we can render it via $\mathcal{R}(\theta)$. For example, $\theta$ can represent a vector of pixel RGB&#x2F;Latent, and $\mathcal{R}$ as the identical mapping. A more advanced version parameterizes $\mathcal{R}$ as a hash encoding followed by a tiny MLP according to <strong>InstantNGP</strong>. As from <a target="_blank" rel="noopener" href="https://dreamfusion3d.github.io/"><strong>DreamFusion</strong></a>, the SDS loss can be represented as:</p>
+<center>$\nabla_{\theta}\mathcal{L}_{SDS} = E_{t,\epsilon}\; w(t)(e_\phi(\mathbf{z}_t;\mathbf{y},t)-\epsilon)\frac{\partial \mathbf{x}}{\partial \theta}$</center>
+where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf{y}$ as prompt at timestep $t$, and $w(t)$ is the scale of noise added to the data. Practically, we optimize the SDS loss stochastically by randomly sampling a gaussian noise $\epsilon$, a timestep $t$, add the noise to latent version of $\mathcal{R}(\theta)$ (probably via a encoder $\mathcal{E}$) as $\mathbf{z}_t$, and compute $|w(t)(e_\phi(\mathbf{z}_t;\mathbf{y},t)-\epsilon)|^2$ as the loss for each training step. An Adam optimizer is linked to $\theta$ for optimization.
+
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-科研/文生3D/Introduction" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1352,112 +1456,8 @@
 
 
     
-        <article id="post-哲学/笛卡尔——谈谈方法" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%93%B2%E5%AD%A6/%E5%BD%A2%E8%80%8C%E4%B8%8A%E5%AD%A6/">形而上学</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E4%B9%A6%E8%AF%84/" rel="tag">书评</a>, <a class="tag-link-link" href="/tags/%E5%93%B2%E5%AD%A6/" rel="tag">哲学</a>, <a class="tag-link-link" href="/tags/%E5%BD%A2%E8%80%8C%E4%B8%8A%E5%AD%A6/" rel="tag">形而上学</a>, <a class="tag-link-link" href="/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94/" rel="tag">笛卡尔</a>, <a class="tag-link-link" href="/tags/%E8%B0%88%E8%B0%88%E6%96%B9%E6%B3%95/" rel="tag">谈谈方法</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2022/12/18/%E5%93%B2%E5%AD%A6/%E7%AC%9B%E5%8D%A1%E5%B0%94%E2%80%94%E2%80%94%E8%B0%88%E8%B0%88%E6%96%B9%E6%B3%95/">
-            <time datetime="2022-12-18T07:18:00.000Z" itemprop="datePublished">2022-12-18</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/哲学/笛卡尔——谈谈方法.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/哲学/笛卡尔——谈谈方法.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/哲学/笛卡尔——谈谈方法.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2022/12/18/%E5%93%B2%E5%AD%A6/%E7%AC%9B%E5%8D%A1%E5%B0%94%E2%80%94%E2%80%94%E8%B0%88%E8%B0%88%E6%96%B9%E6%B3%95/">笛卡尔——谈谈方法</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="概括"><a href="#概括" class="headerlink" title="概括"></a>概括</h2><p>笛卡尔的《谈谈方法》是通向现代科学和哲学之路，摒弃了古代希腊哲学在经过中世纪宗教魔改后出现的柏拉图神秘主义的空想和亚里士多德的疯狂绕弯推断，而是在古代哲学的基础上提出了现代的研究方法。他部分继承了柏拉图的宇宙观，但在探索自然时偏向于亚里士多德的研究方法；他进一步在亚里士多德的实验方法底部加了个宗旨，就是凡事得靠清晰的直觉做验证，而非基于错误前提的繁琐的推断。</p>
-<p>笛卡尔同时继承了一些奥古斯丁的生活观，在提出革命性思路的情况下尽可能与保守的社会和宗教势力形成和谐和平衡。下面为每章摘要。</p>
-<h2 id="第一章——提新方法的动机"><a href="#第一章——提新方法的动机" class="headerlink" title="第一章——提新方法的动机"></a>第一章——提新方法的动机</h2><p>每个人都有同样充分良好的道德、感觉与智慧，但是想要成为伟大的思想者，还需要正确的应用它们。伟大的思想者达到卓越的方式是通过怀有开放态度，在谬误中并慢慢探索并超正确的方向前进。</p>
-<p>笛卡尔对其所学并不满意，觉得知识点很多，但所学的古代思想犹如泥沙堆砌的宫殿，晦涩而没有牢固的基础。</p>
-<h2 id="第二章——新方法的根本原则"><a href="#第二章——新方法的根本原则" class="headerlink" title="第二章——新方法的根本原则"></a>第二章——新方法的根本原则</h2><p>有历史的城市自发的成长，其布局总是不如重新规划并建立的新城市合理且优雅，因此为了解决自己对所学的知识的不满，他决定重新规划而不是在旧的见解上进一步堆砌（中世纪+亚里士多德三段论）。为此，他给出了思考的几个原则：</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2022/12/18/%E5%93%B2%E5%AD%A6/%E7%AC%9B%E5%8D%A1%E5%B0%94%E2%80%94%E2%80%94%E8%B0%88%E8%B0%88%E6%96%B9%E6%B3%95/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
         <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Berikutnya &raquo;</a>
         </nav>
     
 </section>
