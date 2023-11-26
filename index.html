@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,10 +111,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'pos',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'kategori',
-            TAGS: 'tag',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -147,7 +147,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -164,7 +164,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>kategori</span>
+            <span>categories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -331,7 +331,7 @@
                             &nbsp;
                             文生3D
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">Adding Controls</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">High Resolution Optimization</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -416,6 +416,214 @@
 </aside>
             
             <section id="main">
+        <article id="post-科研/文生3D/Highres-Optim" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/">科研</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/">文生3D</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%96%87%E7%94%9F3D/" rel="tag">文生3D</a>, <a class="tag-link-link" href="/tags/%E7%A7%91%E7%A0%94/" rel="tag">科研</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">
+            <time datetime="2023-11-26T12:30:00.000Z" itemprop="datePublished">2023-11-26</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/科研/文生3D/Highres-Optim.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/科研/文生3D/Highres-Optim.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/科研/文生3D/Highres-Optim.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">High Resolution Optimization</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>We aim to generate geometry with a high-resolution appearance. The only way is to zoom in since stable diffusion has limited resolution.<br>There are several options for zoom-in. The first question is whether to use a multi-resolution geometry model, and the second question is the way to zoom in for renderings.</p>
+<h2 id="Geometry-model"><a href="#Geometry-model" class="headerlink" title="Geometry model"></a>Geometry model</h2><p>We will investigate this problem in the experiments of 3D representations.</p>
+<h2 id="Zoom-in-rendering"><a href="#Zoom-in-rendering" class="headerlink" title="Zoom-in rendering"></a>Zoom-in rendering</h2><p>I conclude several ways to zoom in.</p>
+<ul>
+<li>Progressive zoom-in. Such methods first render in far distance to capture the whole object. Then, it zooms in to the closer viewpoint to optimize details.<br><strong>Progressive zoom-in</strong> is apparently a good option when no initial geometry is given – in which case there is no definition of close&#x2F;far. <strong>However, a limitation is that by looking closer, global context is unavailable it usually leads to bad results after long optimization.</strong></li>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
+        <article id="post-科研/文生3D/Adding-control" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/">科研</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/">文生3D</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%96%87%E7%94%9F3D/" rel="tag">文生3D</a>, <a class="tag-link-link" href="/tags/%E7%A7%91%E7%A0%94/" rel="tag">科研</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">
+            <time datetime="2023-11-26T12:00:00.000Z" itemprop="datePublished">2023-11-26</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/科研/文生3D/Adding-control.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/科研/文生3D/Adding-control.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/科研/文生3D/Adding-control.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">Adding Controls</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p> We introduce additional geometry controls to better align the appearance with geometry. As from <a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/"><strong>introduction</strong></a>, geometry alignment can be achieved by incorporating geometry features for score distillation (align geometry with the rendering), or controlling the RGB to align with geometry features.</p>
+<h2 id="Align-Color-to-Geometry"><a href="#Align-Color-to-Geometry" class="headerlink" title="Align Color to Geometry"></a>Align Color to Geometry</h2><h3 id="ControlNet"><a href="#ControlNet" class="headerlink" title="ControlNet"></a>ControlNet</h3><p><strong>Control Conditions.</strong> One of the most popular choices for aligning color to geometry is via controlnet. For example, we can render geometry features to views as edge&#x2F;normal&#x2F;depth. <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2308.03610"><strong>Avatarverse</strong></a> further controls character appearance with dense-pose features.</p>
+<p>From my experiments, different geometry features contribute to the control in various ways.</p>
+<ul>
+<li>Canny edge is suitable for precisely controlling the boundary alignment. For example, the generated RGB image actually aligns with the canny edge with pixel-level accuracy. Therefore, it is important to texture the 3D model with edge control. <strong>However, rendering the edges might be problematic given stupid triangle soups in the CAD model. Occlusion boundary&#x2F;sharp edge features are naturally ambiguous.</strong> My current solution is to render a normal map and directly extract canny features from the normal image, <strong>which seems to work okay.</strong></li>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-科研/文生3D/Single-view-sds" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1248,216 +1456,8 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
 
 
     
-        <article id="post-亚里士多德/亚里士多德——伦理学-1" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/">亚里士多德</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BC%A6%E7%90%86%E5%AD%A6/">伦理学</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/" rel="tag">亚里士多德</a>, <a class="tag-link-link" href="/tags/%E4%BC%A6%E7%90%86%E5%AD%A6/" rel="tag">伦理学</a>, <a class="tag-link-link" href="/tags/%E5%93%B2%E5%AD%A6/" rel="tag">哲学</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2022/12/22/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E4%BC%A6%E7%90%86%E5%AD%A6-1/">
-            <time datetime="2022-12-22T05:38:00.000Z" itemprop="datePublished">2022-12-22</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/亚里士多德/亚里士多德——伦理学-1.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/亚里士多德/亚里士多德——伦理学-1.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/亚里士多德/亚里士多德——伦理学-1.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2022/12/22/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E4%BC%A6%E7%90%86%E5%AD%A6-1/">亚里士多德——伦理学（1）</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="伦理学是什么"><a href="#伦理学是什么" class="headerlink" title="伦理学是什么"></a>伦理学是什么</h2><h3 id="基础假设"><a href="#基础假设" class="headerlink" title="基础假设"></a>基础假设</h3><p>善作为目的。人做事、思考、探寻知识，都是为了某种善的目的。这个前提也许不成立（例如佛家讲究空），因此我们谈论西方的伦理学，都建立在这个前提下；对于虚无主义者，没办法探讨。</p>
-<h3 id="目的链条和最高善"><a href="#目的链条和最高善" class="headerlink" title="目的链条和最高善"></a>目的链条和最高善</h3><p>因自身而值得追求。目的通常形成一个链条，例如我赚钱的目的是为了买房，买房的目的是为了生活好，生活好的目的是为了更好的思考。赚钱-&gt;买房-&gt;生活好-&gt;去思考，链条的后面更为主要，前面则是辅助的目标。链条的终端就是善的本质，本质善的东西不为别的，而是因自身值得追求。（内涵思想参见<a href="/2022/09/04/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E5%BD%A2%E8%80%8C%E4%B8%8A%E5%AD%A6-8-12/"><strong>《形而上学》（八）</strong></a>）的探讨）</p>
-<h3 id="伦理学的范围"><a href="#伦理学的范围" class="headerlink" title="伦理学的范围"></a>伦理学的范围</h3><p>人类的最终目标是对全社会都好，这是政治学讨论的范畴。而它的前提是研究个人以及周边如何获得善。伦理学的范围是个人的善，即研究什么是幸福，如何获得幸福。</p>
-<h2 id="幸福是什么"><a href="#幸福是什么" class="headerlink" title="幸福是什么"></a>幸福是什么</h2><h3 id="幸福不是型"><a href="#幸福不是型" class="headerlink" title="幸福不是型"></a>幸福不是型</h3><p>亚里士多德专门论述了幸福不是柏拉图的理念。柏拉图认为善是型，是自包含的一（《理想国》），但是根据根据亚里士多德的《范畴篇》，幸福更多的是一种性质而非实体，因而幸福不一定包含单一的本体（《形而上学》（七））。因此，幸福的原因是多，应当通过考察已有人们的经验来枚举总结，而非使用柏拉图的型的二分法进行空想。</p>
-<h3 id="幸福的第一原则"><a href="#幸福的第一原则" class="headerlink" title="幸福的第一原则"></a>幸福的第一原则</h3><p>自足。一个幸福的人生必须是无缺憾的。因此理论上人都难言幸福，因为在死之前，下一秒谁也不能保证不缺什么，甚至死后，自己的名声、身后的心愿都可能逆转或无法达成。因此人一直在追求幸福，但在某个时间点也可以依据他的状态判断是否大体是幸福的。</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2022/12/22/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7%E2%80%94%E2%80%94%E4%BC%A6%E7%90%86%E5%AD%A6-1/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
-        <article id="post-哲学/马可奥勒留——沉思录" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E5%93%B2%E5%AD%A6/%E4%BC%A6%E7%90%86%E5%AD%A6/">伦理学</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/%E4%B9%A6%E8%AF%84/" rel="tag">书评</a>, <a class="tag-link-link" href="/tags/%E4%BC%A6%E7%90%86%E5%AD%A6/" rel="tag">伦理学</a>, <a class="tag-link-link" href="/tags/%E5%93%B2%E5%AD%A6/" rel="tag">哲学</a>, <a class="tag-link-link" href="/tags/%E6%B2%89%E6%80%9D%E5%BD%95/" rel="tag">沉思录</a>, <a class="tag-link-link" href="/tags/%E9%A9%AC%E5%8F%AF%E5%A5%A5%E5%8B%92%E7%95%99/" rel="tag">马可奥勒留</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2022/12/19/%E5%93%B2%E5%AD%A6/%E9%A9%AC%E5%8F%AF%E5%A5%A5%E5%8B%92%E7%95%99%E2%80%94%E2%80%94%E6%B2%89%E6%80%9D%E5%BD%95/">
-            <time datetime="2022-12-19T13:32:00.000Z" itemprop="datePublished">2022-12-19</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/raw/source/source/_posts/哲学/马可奥勒留——沉思录.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/edit/source/source/_posts/哲学/马可奥勒留——沉思录.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/hjwdzh/hjwdzh.github.io/commits/source/source/_posts/哲学/马可奥勒留——沉思录.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2022/12/19/%E5%93%B2%E5%AD%A6/%E9%A9%AC%E5%8F%AF%E5%A5%A5%E5%8B%92%E7%95%99%E2%80%94%E2%80%94%E6%B2%89%E6%80%9D%E5%BD%95/">马可奥勒留——沉思录</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>马可奥勒留的《沉思录》是其历经十几年写下来的心得体会，用于告诫自己为人处世要淡定，心态要好。这本书不包含逻辑严密的成体系的逻辑论证和学说，更像是小作文。当然他的小作文写的确实不错，里面有很多闪光的想法，而且也非常有道理。《沉思录》从宗教中来，到生活中去，对于心灵和行为的指导是有益的。美中不足的是不够精炼，不同的作文中相似的观点反复出现，同时观点间虽有联系，但这种联系分散在各处，难以形成统一的系统。因此读完整本书又很难用几句话完整的概括他的观点，以至于让读者担心有所错漏。我归纳整理了书中主要的观点以及他们的联系，虽不能体现原著美感，但能更好的对自己进行指导。</p>
-<h2 id="总纲"><a href="#总纲" class="headerlink" title="总纲"></a>总纲</h2><ol>
-<li>对外，心态要淡定——一是因为外部环境没有错，错只能怪自己。</li>
-<li>对内，心态要健康——抵制诱惑，要善良，要感恩。</li>
-<li>对外行为——帮助和尊重他人。</li>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2022/12/19/%E5%93%B2%E5%AD%A6/%E9%A9%AC%E5%8F%AF%E5%A5%A5%E5%8B%92%E7%95%99%E2%80%94%E2%80%94%E6%B2%89%E6%80%9D%E5%BD%95/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
         <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Berikutnya &raquo;</a>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
         </nav>
     
 </section>

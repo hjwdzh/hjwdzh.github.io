@@ -17,7 +17,7 @@
 <meta property="og:description" content="IntroductionAccording to my introduction, the simplest experiment to start with is the single-view text-to-image experiment using the stochastic optimization method. The reason that we want to optimiz">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-21T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-11-22T13:54:54.499Z">
+<meta property="article:modified_time" content="2023-11-26T13:02:35.327Z">
 <meta property="article:author" content="黄经纬">
 <meta property="article:tag" content="科研">
 <meta property="article:tag" content="文生3D">
@@ -98,7 +98,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -117,10 +117,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'pos',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'kategori',
-            TAGS: 'tag',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -170,7 +170,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>kategori</span>
+            <span>categories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -337,7 +337,7 @@
                             &nbsp;
                             文生3D
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file active"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file active"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">Adding Controls</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">High Resolution Optimization</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -481,8 +481,8 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catálogo</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Formulation"><span class="toc-number">2.1.</span> <span class="toc-text">Formulation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Experiment-Setting"><span class="toc-number">2.2.</span> <span class="toc-text">Experiment Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Challenges"><span class="toc-number">2.3.</span> <span class="toc-text">Challenges</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-ideas-for-EPL-N"><span class="toc-number">3.</span> <span class="toc-text">Main ideas for EPL-N</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD"><span class="toc-number">3.1.</span> <span class="toc-text">NFSD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ProlificDreamer"><span class="toc-number">3.2.</span> <span class="toc-text">ProlificDreamer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HIFA"><span class="toc-number">3.3.</span> <span class="toc-text">HIFA</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-number">4.</span> <span class="toc-text">Solution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Initialization"><span class="toc-number">4.1.</span> <span class="toc-text">Initialization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD-Decreasing-order-Scheduling"><span class="toc-number">4.2.</span> <span class="toc-text">NFSD + Decreasing-order Scheduling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Robust-NFSD-Time-annealing"><span class="toc-number">4.3.</span> <span class="toc-text">Robust NFSD + Time annealing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Investigation-of-the-optimization"><span class="toc-number">4.4.</span> <span class="toc-text">Investigation of the optimization</span></a></li></ol></li></ol>
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Formulation"><span class="toc-number">2.1.</span> <span class="toc-text">Formulation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Experiment-Setting"><span class="toc-number">2.2.</span> <span class="toc-text">Experiment Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Challenges"><span class="toc-number">2.3.</span> <span class="toc-text">Challenges</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-ideas-for-EPL-N"><span class="toc-number">3.</span> <span class="toc-text">Main ideas for EPL-N</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD"><span class="toc-number">3.1.</span> <span class="toc-text">NFSD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ProlificDreamer"><span class="toc-number">3.2.</span> <span class="toc-text">ProlificDreamer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HIFA"><span class="toc-number">3.3.</span> <span class="toc-text">HIFA</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-number">4.</span> <span class="toc-text">Solution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Initialization"><span class="toc-number">4.1.</span> <span class="toc-text">Initialization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD-Decreasing-order-Scheduling"><span class="toc-number">4.2.</span> <span class="toc-text">NFSD + Decreasing-order Scheduling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Robust-NFSD-Time-annealing"><span class="toc-number">4.3.</span> <span class="toc-text">Robust NFSD + Time annealing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Investigation-of-the-optimization"><span class="toc-number">4.4.</span> <span class="toc-text">Investigation of the optimization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Limitations"><span class="toc-number">5.</span> <span class="toc-text">Limitations</span></a></li></ol>
                 </div>
             
         
@@ -503,7 +503,8 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
 <h2 id="Main-ideas-for-EPL-N"><a href="#Main-ideas-for-EPL-N" class="headerlink" title="Main ideas for EPL-N"></a>Main ideas for EPL-N</h2><p>I am mainly discussing three ideas includig Variational Score Distillation(VSD) (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2305.16213"><strong>ProlificDreamer</strong></a>), Noise-Free Score Distillation (<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.17590"><strong>NFSD</strong></a>)) and time-annealing (<a target="_blank" rel="noopener" href="https://hifa-team.github.io/HiFA-site/"><strong>HIFA</strong></a>).</p>
 <h3 id="NFSD"><a href="#NFSD" class="headerlink" title="NFSD"></a>NFSD</h3><center>$e_\phi(\mathbf{z}_t;\mathbf{y},t) = e_\phi(\mathbf{z}_t,\emptyset,t) + s\cdot(e_\phi(\mathbf{z}_t,\textbf{y},t)-e_\phi(\mathbf{z}_t,\emptyset,t))$</center>
 
-<p>NFSD introduces an important idea that disentangles the SDS loss term.<br>When $s&#x3D;7.5$ is the normal classifier guidance scale, the result is oversmooth. When $s&#x3D;100$, the result is oversaturated. Therefore, $\delta_C&#x3D;(e_\phi(\mathbf{z}_t,\textbf{y},t)-e_\phi(\mathbf{z}_t,\emptyset,t))$ is the classifier term that really contributes to align the image to the text, and the high $s$ downgrade the effect of the term $e_\phi(\mathbf{z}_t,\emptyset,t)$ that smooth the image. It further states that $e_\phi(\mathbf{z}_t,\emptyset,t)$ can be decomposed into a denoising term $\delta_N$ and a correction term $\delta_D$ moving the “out-of-distribution” $\mathbf{z}_0$ into the data distribution, and the reason that SDS fails is that the denoiser unreliably predict $e_\phi(\mathbf{z}_t,\emptyset,t)$ for small timesteps given $\mathbf{z}_t$ as the in-distribution image added with Gaussian noise. <strong>This is a remarkable finding and it really leads to the oversmooth effect</strong>. They claim that the the correction term at small timestep $\delta_D&#x3D;e_\phi(\mathbf{z}<em>t,\emptyset,t)$ since $\delta_N$ is negligible, while $\delta_D$ at larger timestep is approximated by $-delta_C(\mathbf{y}</em>{neg})$. Quite makes sense! <strong>However, the correction term is still noisy and leads to a blurry background since multiple answers exist. Therefore, naively optimizing NFSD won’t work as experimented me, and the main reason is that the unstable optimization easily trapped to a local minimum.</strong></p>
+<p>NFSD introduces an important idea that disentangles the SDS loss term.<br>When $s&#x3D;7.5$ is the normal classifier guidance scale, the result is oversmooth. When $s&#x3D;100$, the result is oversaturated. Therefore, $\delta_C&#x3D;(e_\phi(\mathbf{z}_t,\textbf{y},t)-e_\phi(\mathbf{z}_t,\emptyset,t))$ is the classifier term that really contributes to align the image to the text, and the high $s$ downgrade the effect of the term $e_\phi(\mathbf{z}_t,\emptyset,t)$ that smooth the image. It further states that $e_\phi(\mathbf{z}_t,\emptyset,t)$ can be decomposed into a denoising term $\delta_N$ and a correction term $\delta_D$ moving the “out-of-distribution” $\mathbf{z}_0$ into the data distribution, and the reason that SDS fails is that the denoiser unreliably predict $e_\phi(\mathbf{z}_t,\emptyset,t)$ for small timesteps given $\mathbf{z}_t$ as the in-distribution image added with Gaussian noise. <strong>This is a remarkable finding and it really leads to the oversmooth effect</strong>. They claim that the the correction term at small timestep $\delta_D&#x3D;e_\phi(\mathbf{z}_t,\emptyset,t)$ since $\delta_N$ is negligible, while $\delta_D$ at larger timestep is approximated by</p>
+<p>$-\delta_C(\mathbf{y}_{neg})$. Quite makes sense! <strong>However, the correction term is still noisy and leads to a blurry background since multiple answers exist. Therefore, naively optimizing NFSD won’t work as experimented me, and the main reason is that the unstable optimization easily trapped to a local minimum.</strong></p>
 <h3 id="ProlificDreamer"><a href="#ProlificDreamer" class="headerlink" title="ProlificDreamer"></a>ProlificDreamer</h3><p>The main idea of ProlificDreamer is to finetune a LORA model that estimates correct noises for the out-of-distribution image during the intermediate state of the optimization stage. Then, by subtracting the LORA prediction from the pre-trained prediction, the correction term can be robustly obtained. <strong>However, it is questionable whether such a LORA model can be robustly optimized, and the results from an unofficial implementation <a target="_blank" rel="noopener" href="https://github.com/yuanzhi-zhu/prolific_dreamer2d"><strong>ProlificDreamer 2D</strong></a> seem to be unstable. Further, the optimization is quite inefficient.</strong></p>
 <h3 id="HIFA"><a href="#HIFA" class="headerlink" title="HIFA"></a>HIFA</h3><p>Some works find that a larger timestep helps to build a global structure that aligns with the text. Such an idea is consistent with NFSD’s explanation that the score is dominated by the classifier term and thus builds the semantic structure. As a result, these works sample larger time steps at the first stage and smaller timesteps when a reasonable structure is initialized correctly. HiFA further schedules the timestep by enforcing it to be sampled in decreasing order. From the NSFD model, we find that such a process means building the initial structure and then moving it to the data distribution. <strong>I believe it brings an additional challenge since it is important to carefully tune the annealing pace so that the classifier term at large timesteps does not make the image oversaturated, and small timesteps do not make the image over smooth. As a result, for different parameterizations of $\theta$ and initial state $\theta_0$, the hyperparameters may need to change accordingly, which makes the optimization untrustworthy.</strong></p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><h3 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h3><p>I find it important to initialize the latent space to be roughly a Gaussian distribution. Zero initialization sometimes makes the optimization hard to escape the <strong>saddle</strong> zero-point. For the color experiment, we should not directly initialize Gaussian noise at RGB space. Rather, we initialize it to fit the decoded Gaussian latent code.</p>
@@ -540,6 +541,7 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
 <li>Ensure that the final result converges. (Increase the weight of the correction term if oversaturated or decrease it if over smooth)</li>
 </ul>
 <p>With these principles, hopefully, we always manage to obtain a fixed set of hyperparameters for different experiment settings.</p>
+<h2 id="Limitations"><a href="#Limitations" class="headerlink" title="Limitations"></a>Limitations</h2><p>Very unfortunately, when playing with controlnet, the NFSD idea does not really work. I am seeking to make it work with a recent paper called <a target="_blank" rel="noopener" href="https://github.com/EnVision-Research/LucidDreamer"><strong>LucidDreamer</strong></a>.</p>
 
             </div>
         
@@ -552,9 +554,18 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
     
 <nav id="article-nav">
     
+        <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Adding Controls
+                
+            </div>
+        </a>
+    
     
         <a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Lebih Tua</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">Introduction to X-to-3D</div>
         </a>
     
