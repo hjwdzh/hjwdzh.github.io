@@ -143,3 +143,13 @@ Some ideas are entangled with each other, and I would like to start with easy ex
 - **Texture generation SDS** Check idea 8/10/9.
 - **3D Generation** Check idea 2/6/5/7.
 - **Pre-post processing** Check idea 1/11.
+
+### Timeline
+- 1/2 is **potentially answered by [**LucidDreamer**](https://github.com/EnVision-Research/LucidDreamer) (d)**.
+- 3 is experimented with ControlNet. **Will try the prompt-free diffuser. (a)**
+- 4 is thoroughly experimented but not yet solved, **probably solved with LucidDreamer (c)**.
+- 5/6/7 **still need to be experimented (e)**.
+- **8 will be tried in the texture experiment. (b)**
+- 9 seems not critical.
+- 10 is verified with the texture experiment.
+- **11 will be hacked later.**
