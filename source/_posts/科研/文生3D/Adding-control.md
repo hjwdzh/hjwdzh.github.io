@@ -26,8 +26,8 @@ From my experiments, different geometry features contribute to the control in va
 On the other hand, it seems that ControlNet changes the physical meaning of $\epsilon(\mathbf{x},t,\emptyset)$ since it introduces additional controls. As a result, **[**NFSD**](https://arxiv.org/abs/2310.17590)) does not apply to ControlNet**. I plan to drop NFSD unless a good open-source version is available since a non-conditioned SD also does not work well in the 3D texturing case. ControlNet is considered in [**LucidDreamer**](https://github.com/EnVision-Research/LucidDreamer), and I would like to try it.
 
 ### Prompt-free Stable Diffusion
-I will try [**Prompt-free diffuser**](https://arxiv.org/pdf/2305.16223.pdf) to see its behavior.
+[**Prompt-free diffuser**](https://arxiv.org/pdf/2305.16223.pdf) can be viewed as replacing the text prompt with an image prompt in controlnet. However, it works pretty bad.
 
 ## Align Geometry with Diffusion Prior
 
-### TODO
+### TODO (sweetdreamer etc., will try it if such geometry optimization is important)

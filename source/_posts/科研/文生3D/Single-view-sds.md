@@ -90,3 +90,7 @@ With these principles, hopefully, we always manage to obtain a fixed set of hype
 
 ## Limitations
 Very unfortunately, when playing with controlnet, the NFSD idea does not really work. I am seeking to make it work with a recent paper called [**LucidDreamer**](https://github.com/EnVision-Research/LucidDreamer).
+
+## Updates
+
+1. Finally we find that the new work [**LucidDreamer**](https://github.com/EnVision-Research/LucidDreamer) actually works pretty well and robust. We need to tune the warmup ratio in order to make it works the best.

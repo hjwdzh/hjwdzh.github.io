@@ -139,17 +139,20 @@ Given existing ideas, I would like to design a system that incorporates all valu
 11. **Texture-space image-to-image diffusion** May enhance the details in one post-processing step.
 
 Some ideas are entangled with each other, and I would like to start with easy experiments.
-- **Image generation SDS** Check idea 3/4.
+- **Image generation SDS** Check idea 3/4. (Done)
 - **Texture generation SDS** Check idea 8/10/9.
 - **3D Generation** Check idea 2/6/5/7.
 - **Pre-post processing** Check idea 1/11.
 
 ### Timeline
-- 1/2 is **potentially answered by [**LucidDreamer**](https://github.com/EnVision-Research/LucidDreamer) (d)**.
-- 3 is experimented with ControlNet. **Will try the prompt-free diffuser. (a)**
-- 4 is thoroughly experimented but not yet solved, **probably solved with LucidDreamer (c)**.
-- 5/6/7 **still need to be experimented (e)**.
-- **8 will be tried in the texture experiment. (b)**
-- 9 seems not critical.
-- 10 is verified with the texture experiment.
-- **11 will be hacked later.**
+- (1) 3D initialization from Point-E is fine but coarse, which is helpful.
+- (2) 3D representation by Gaussian Splatting seems to be fast. **Needs to experiment**
+- (3) ControlNet is well-experimented with SDS and LucidDreamer. Prompt-free diffuser does not generalize well to new images.
+- (4) is well-addressed by LucidDreamer. **My friends say that VSD also can work, which needs to be verified**.
+- (5) **TODO: Play with Wonder3D**
+- (6) **TODO: Play with MVDream**
+- (7) **TODO: check later**.
+- (8) **Try to generate the front view and guide the generation. needs to be experimented with.**
+- (9) It seems that tune some hyperparameters of LucidDreamer is sufficient. **VSD needs to be experimented with.**
+- (10) Alternative zoom-in works the best.
+- (11) **TODO: check later**
