@@ -17,7 +17,7 @@
 <meta property="og:description" content="IntroductionAccording to my introduction, the simplest experiment to start with is the single-view text-to-image experiment using the stochastic optimization method. The reason that we want to optimiz">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-21T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-11-26T13:02:35.327Z">
+<meta property="article:modified_time" content="2023-12-02T03:37:21.885Z">
 <meta property="article:author" content="黄经纬">
 <meta property="article:tag" content="科研">
 <meta property="article:tag" content="文生3D">
@@ -98,7 +98,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -117,9 +117,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
     </div>
 
                 </td>
@@ -170,7 +170,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>Catégories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -337,7 +337,7 @@
                             &nbsp;
                             文生3D
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file active"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">Adding Controls</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">High Resolution Optimization</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/">Introduction to X-to-3D</a></li>  <li class="file active"><a href="/2023/11/21/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Single-view-sds/">Single View SDS</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/">Adding Controls</a></li>  <li class="file"><a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Highres-Optim/">High Resolution Optimization</a></li>  <li class="file"><a href="/2023/12/02/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Image-prior/">Image Prior Supervision</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -482,7 +482,7 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">Catalogue</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Formulation"><span class="toc-number">2.1.</span> <span class="toc-text">Formulation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Experiment-Setting"><span class="toc-number">2.2.</span> <span class="toc-text">Experiment Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Challenges"><span class="toc-number">2.3.</span> <span class="toc-text">Challenges</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-ideas-for-EPL-N"><span class="toc-number">3.</span> <span class="toc-text">Main ideas for EPL-N</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD"><span class="toc-number">3.1.</span> <span class="toc-text">NFSD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ProlificDreamer"><span class="toc-number">3.2.</span> <span class="toc-text">ProlificDreamer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HIFA"><span class="toc-number">3.3.</span> <span class="toc-text">HIFA</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-number">4.</span> <span class="toc-text">Solution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Initialization"><span class="toc-number">4.1.</span> <span class="toc-text">Initialization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD-Decreasing-order-Scheduling"><span class="toc-number">4.2.</span> <span class="toc-text">NFSD + Decreasing-order Scheduling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Robust-NFSD-Time-annealing"><span class="toc-number">4.3.</span> <span class="toc-text">Robust NFSD + Time annealing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Investigation-of-the-optimization"><span class="toc-number">4.4.</span> <span class="toc-text">Investigation of the optimization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Limitations"><span class="toc-number">5.</span> <span class="toc-text">Limitations</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Formulation"><span class="toc-number">2.1.</span> <span class="toc-text">Formulation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Experiment-Setting"><span class="toc-number">2.2.</span> <span class="toc-text">Experiment Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Challenges"><span class="toc-number">2.3.</span> <span class="toc-text">Challenges</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-ideas-for-EPL-N"><span class="toc-number">3.</span> <span class="toc-text">Main ideas for EPL-N</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD"><span class="toc-number">3.1.</span> <span class="toc-text">NFSD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ProlificDreamer"><span class="toc-number">3.2.</span> <span class="toc-text">ProlificDreamer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HIFA"><span class="toc-number">3.3.</span> <span class="toc-text">HIFA</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Solution"><span class="toc-number">4.</span> <span class="toc-text">Solution</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Initialization"><span class="toc-number">4.1.</span> <span class="toc-text">Initialization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NFSD-Decreasing-order-Scheduling"><span class="toc-number">4.2.</span> <span class="toc-text">NFSD + Decreasing-order Scheduling</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Robust-NFSD-Time-annealing"><span class="toc-number">4.3.</span> <span class="toc-text">Robust NFSD + Time annealing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Investigation-of-the-optimization"><span class="toc-number">4.4.</span> <span class="toc-text">Investigation of the optimization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Limitations"><span class="toc-number">5.</span> <span class="toc-text">Limitations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updates"><span class="toc-number">6.</span> <span class="toc-text">Updates</span></a></li></ol>
                 </div>
             
         
@@ -542,6 +542,9 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
 </ul>
 <p>With these principles, hopefully, we always manage to obtain a fixed set of hyperparameters for different experiment settings.</p>
 <h2 id="Limitations"><a href="#Limitations" class="headerlink" title="Limitations"></a>Limitations</h2><p>Very unfortunately, when playing with controlnet, the NFSD idea does not really work. I am seeking to make it work with a recent paper called <a target="_blank" rel="noopener" href="https://github.com/EnVision-Research/LucidDreamer"><strong>LucidDreamer</strong></a>.</p>
+<h2 id="Updates"><a href="#Updates" class="headerlink" title="Updates"></a>Updates</h2><ol>
+<li>Finally we find that the new work <a target="_blank" rel="noopener" href="https://github.com/EnVision-Research/LucidDreamer"><strong>LucidDreamer</strong></a> actually works pretty well and robust. We need to tune the warmup ratio in order to make it works the best.</li>
+</ol>
 
             </div>
         
@@ -555,7 +558,7 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
 <nav id="article-nav">
     
         <a href="/2023/11/26/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Adding-control/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
+            <strong class="article-nav-caption">Plus récent</strong>
             <div class="article-nav-title">
                 
                     Adding Controls
@@ -565,7 +568,7 @@ where $e_\phi$ is the predicted noise given $\mathbf{z}_t$ as input and $\mathbf
     
     
         <a href="/2023/11/18/%E7%A7%91%E7%A0%94/%E6%96%87%E7%94%9F3D/Introduction/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
+            <strong class="article-nav-caption">Plus ancien</strong>
             <div class="article-nav-title">Introduction to X-to-3D</div>
         </a>
     
