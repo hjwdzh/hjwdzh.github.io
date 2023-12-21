@@ -91,6 +91,7 @@ Path{
 Patch {
 	"ids": "points belonging to the patch",
 	"outer_corners": "outer oriented corners",
+	"inner_loops": [ [ "inner oriented corners"] ],
 	"genus": "genus",
 	"num_singularities": "xxx"
 }
@@ -135,3 +136,6 @@ Assign each edge from Point.adj into two of 4x4 pairs of oriented-points.
 11. Random internal sampling. Sort them, and **If valid**, preserve it Followed by 5-6-7-8.
 12. Edge sampling. Sort them, and **If valid**, preserve it Followed by 5-6-7-8.
 13. Recursively do 9-12 for invalid subpatches.
+
+### Patch status
+The major difficulty is about computing genus for a patch with unstructured point cloud.
