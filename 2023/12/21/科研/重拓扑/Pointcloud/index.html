@@ -9,15 +9,15 @@
         <meta name="keywords" content="科研,重拓扑" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="BackgroundWhat if we want to build a nice topology around a pointcloud similar to mesh retopology? Let’s think about it. Similar to  aims to partition the mesh into surface patches satisfying several">
+    <meta name="description" content="BackgroundWhat if we want to build a nice topology around a pointcloud similar to mesh retopology? Let’s think about it. MethodTangent field Direction field. We can surely estimate the 4-rosy field fo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Retopologize the point cloud">
-<meta property="og:url" content="http://hjwdzh.github.io/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/index.html">
+<meta property="og:url" content="http://hjwdzh.github.io/2023/12/21/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/index.html">
 <meta property="og:site_name" content="黄经纬的博客">
-<meta property="og:description" content="BackgroundWhat if we want to build a nice topology around a pointcloud similar to mesh retopology? Let’s think about it. Similar to  aims to partition the mesh into surface patches satisfying several">
+<meta property="og:description" content="BackgroundWhat if we want to build a nice topology around a pointcloud similar to mesh retopology? Let’s think about it. MethodTangent field Direction field. We can surely estimate the 4-rosy field fo">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-12-20T12:00:00.000Z">
-<meta property="article:modified_time" content="2023-12-21T02:31:36.539Z">
+<meta property="article:published_time" content="2023-12-21T02:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-21T07:08:01.645Z">
 <meta property="article:author" content="黄经纬">
 <meta property="article:tag" content="科研">
 <meta property="article:tag" content="重拓扑">
@@ -98,7 +98,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -117,10 +117,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -153,7 +153,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -170,7 +170,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>Categorias</span>
+            <span>categories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -364,7 +364,7 @@
                             &nbsp;
                             重拓扑
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Review/">Review of Retopology</a></li>  <li class="file active"><a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/">Retopologize the point cloud</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Review/">Review of Retopology</a></li>  <li class="file active"><a href="/2023/12/21/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/">Retopologize the point cloud</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
@@ -470,8 +470,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/">
-            <time datetime="2023-12-20T12:00:00.000Z" itemprop="datePublished">2023-12-20</time>
+        <a href="/2023/12/21/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Pointcloud/">
+            <time datetime="2023-12-21T02:00:00.000Z" itemprop="datePublished">2023-12-21</time>
         </a>
     </div>
 
@@ -508,36 +508,71 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catálogo</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tangent-field"><span class="toc-number">2.1.</span> <span class="toc-text">Tangent field</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Patch-Segmentation"><span class="toc-number">2.2.</span> <span class="toc-text">Patch Segmentation</span></a></li></ol></li></ol>
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Method"><span class="toc-number">2.</span> <span class="toc-text">Method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tangent-field"><span class="toc-number">2.1.</span> <span class="toc-text">Tangent field</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Patch-Segmentation"><span class="toc-number">2.2.</span> <span class="toc-text">Patch Segmentation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Core-algorithm"><span class="toc-number">3.</span> <span class="toc-text">Core algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#KNN-Split"><span class="toc-number">3.1.</span> <span class="toc-text">KNN Split</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Path-elements"><span class="toc-number">3.2.</span> <span class="toc-text">Path elements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Patch-criterion"><span class="toc-number">3.3.</span> <span class="toc-text">Patch criterion</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-structure"><span class="toc-number">4.</span> <span class="toc-text">Data structure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Points"><span class="toc-number">4.1.</span> <span class="toc-text">Points</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Adjancency"><span class="toc-number">4.2.</span> <span class="toc-text">Adjancency</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Patch"><span class="toc-number">4.3.</span> <span class="toc-text">Patch</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm"><span class="toc-number">5.</span> <span class="toc-text">Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tangent-Field"><span class="toc-number">5.1.</span> <span class="toc-text">Tangent Field</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Motor-cycle-graph"><span class="toc-number">5.2.</span> <span class="toc-text">Motor-cycle graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sharp-boundary-Initialization"><span class="toc-number">5.3.</span> <span class="toc-text">Sharp-boundary Initialization</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rounds"><span class="toc-number">5.4.</span> <span class="toc-text">Rounds</span></a></li></ol></li></ol>
                 </div>
             
         
         
             <h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>What if we want to build a nice topology around a pointcloud similar to <a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Review/"><strong>mesh retopology</strong></a>? Let’s think about it.</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Similar to  aims to partition the mesh into surface patches satisfying several metrics, including</p>
-<ul>
-<li>Topology, homeomorphic to a disk</li>
-<li>Valance, 3-6</li>
-<li>Convex, No left&#x2F;U-turn</li>
-<li>Valance Match</li>
-<li>Length concerns</li>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><h3 id="Tangent-field"><a href="#Tangent-field" class="headerlink" title="Tangent field"></a>Tangent field</h3><ul>
+<li><strong>Direction field.</strong> We can surely estimate the 4-rosy field for each vertex based on a KNN graph.</li>
+<li><strong>Singularity vertex.</strong> For each point and it’s tangent plane, we project points, locally triangulate, and count the rosys (if not 4, it’s a singularity).</li>
+<li><strong>Singularity region.</strong> We can possibly merge singular vertices.</li>
 </ul>
-<p>In practice, we compute tangent field, generate paths to segment patches, and quadrangulate patches into the quad mesh.</p>
-<h3 id="Tangent-field"><a href="#Tangent-field" class="headerlink" title="Tangent field"></a>Tangent field</h3><p>We compute 4-rosy field for mesh faces, determine singularities for mesh vertices using existing methods, e.g., instant-meshes.</p>
-<h3 id="Patch-Segmentation"><a href="#Patch-Segmentation" class="headerlink" title="Patch Segmentation"></a>Patch Segmentation</h3><p><strong>Path tracing.</strong><br>Build a motor-cycle graph (vertices-direction connection), and dijkstra algorithm to compute loop for any sampled vertex-direction pair.</p>
-<p><strong>Global round.</strong><br>We sample a set of loops, sort them according to distance (priority for further paths). Preserve the loop if</p>
+<h3 id="Patch-Segmentation"><a href="#Patch-Segmentation" class="headerlink" title="Patch Segmentation"></a>Patch Segmentation</h3><p><strong>Path tracing.</strong><br>Path tracing is do-able. We build a motor-cycle graph (vertices-direction connection), and dijkstra algorithm to compute loop for any sampled vertex-direction pair.</p>
+<p><strong>Rounds</strong><br>Once we have the path tracing kernel, the main algorithm can work including the recursive patch segmentation, loop selection. However, several problem exists.</p>
 <ul>
-<li>Resolve&#x2F;improve any criterion</li>
-<li>Split any problematic patch<br>and then recursively address each problematic sub-patch.</li>
+<li>How shall we partition points into patches given paths?</li>
+<li>How shall we verify the validity&#x2F;quality of a patch as a point cloud?</li>
 </ul>
-<p>The rounds consist of three steps:</p>
-<ul>
-<li>point-to-point convexity-connection sampling</li>
-<li>internal loop sampling</li>
-<li>border-border</li>
+<h2 id="Core-algorithm"><a href="#Core-algorithm" class="headerlink" title="Core algorithm"></a>Core algorithm</h2><h3 id="KNN-Split"><a href="#KNN-Split" class="headerlink" title="KNN Split"></a>KNN Split</h3><p>The core challenge for partitioning the patch is that non-manifold KNN topology. Once we have the path, we need to split the graph seriously. For each graph edge, we make a normal plane with certain thickness, and any graph edge passing the plane should be removed. After that, we are able to partition the graph into subgraphs as patches.</p>
+<p>We actually can make an annotation to pseudo-split the edge (by recording its splitting path). When a novel path go through the cutted edge, we are able to determine the intersection (orthogonal path) or reject it (tangential path).</p>
+<h3 id="Path-elements"><a href="#Path-elements" class="headerlink" title="Path elements"></a>Path elements</h3><p><strong>Sharp edges.</strong> Seems that it is viable via <a target="_blank" rel="noopener" href="https://doc.cgal.org/latest/Point_set_processing_3/index.html#title61"><strong>CGAL</strong></a>, section 14. Then, paths can be traced along sharp features to get sharp edge paths through KNN.</p>
+<p><strong>Boundary edges.</strong> If a vertex is really at the boundary, there is no neighbor along one of the 4-rosy direction.</p>
+<p><strong>Corners</strong> Boundary corners can be determined by line segment simplification.</p>
+<p><strong>Intersections</strong> Intersections of orthogonal paths can be detected via KNN split.</p>
+<h3 id="Patch-criterion"><a href="#Patch-criterion" class="headerlink" title="Patch criterion"></a>Patch criterion</h3><ul>
+<li><p>Topology, homeomorphic to a disk</p>
+</li>
+<li><p><strong>Valance, 3-6</strong> By maintaining the path elements, counting corners is trivial.</p>
+</li>
+<li><p><strong>Convex, No left&#x2F;U-turn</strong> By measuring the angle between paths, we are able to determine the convexity.</p>
+</li>
+<li><p><strong>Valance Match</strong> By counting internal singularity regions, we are able to verify the valance match.</p>
+</li>
+<li><p><strong>Length concerns</strong> It can be estimated by projecting paths through directions and accumulate lengths.</p>
+</li>
 </ul>
-<p>Finally, we disolve paths that does not do harm to our criteron.</p>
+<h2 id="Data-structure"><a href="#Data-structure" class="headerlink" title="Data structure"></a>Data structure</h2><h3 id="Points"><a href="#Points" class="headerlink" title="Points"></a>Points</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Point <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;p&quot;</span><span class="punctuation">:</span> <span class="string">&quot;XYZ coordinate&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;n&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Normal direction&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;t&quot;</span><span class="punctuation">:</span> <span class="string">&quot;one tangent direction&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;orient_num&quot;</span><span class="punctuation">:</span> <span class="number">4</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;singular_group&quot;</span><span class="punctuation">:</span> <span class="string">&quot;grouped singular region&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;is_boundary&quot;</span><span class="punctuation">:</span> <span class="string">&quot;boundary mark&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;is_sharp&quot;</span><span class="punctuation">:</span> <span class="string">&quot;sharp mark&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;adj&quot;</span><span class="punctuation">:</span> <span class="string">&quot;struct PointAdj&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Adjancency"><a href="#Adjancency" class="headerlink" title="Adjancency"></a>Adjancency</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PointAdj <span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;ids&quot;</span><span class="punctuation">:</span> <span class="string">&quot;an array of neighboring point ids&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">OrientPointAdj <span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;ids&quot;</span><span class="punctuation">:</span> <span class="string">&quot;neighboring ids&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;path_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;path id if it follows a path&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;intersecting_paths&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span>(<span class="string">&quot;path_id&quot;</span><span class="punctuation">,</span><span class="string">&quot;edge_id&quot;</span>)<span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;is_singular&quot;</span><span class="punctuation">:</span> <span class="string">&quot;singular edges are not valid as paths&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Path<span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;end_idx&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;end point indices&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;arcs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">		<span class="punctuation">[</span><span class="string">&quot;internal points&quot;</span><span class="punctuation">]</span></span><br><span class="line">	<span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Patch"><a href="#Patch" class="headerlink" title="Patch"></a>Patch</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Patch <span class="punctuation">&#123;</span></span><br><span class="line">	<span class="attr">&quot;ids&quot;</span><span class="punctuation">:</span> <span class="string">&quot;points belonging to the patch&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;outer_corners&quot;</span><span class="punctuation">:</span> <span class="string">&quot;outer oriented corners&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;genus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;genus&quot;</span><span class="punctuation">,</span></span><br><span class="line">	<span class="attr">&quot;num_singularities&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xxx&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><h3 id="Tangent-Field"><a href="#Tangent-Field" class="headerlink" title="Tangent Field"></a>Tangent Field</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Input Point.p.</span><br><span class="line">Build adjacency KNN Point.adj.</span><br><span class="line">Normal estimation to get Point.n.</span><br><span class="line">Instant-mesh to get Point.t.</span><br><span class="line">For each point:</span><br><span class="line">   gather its neighbor, triangulate them in the 2d tangent plane.</span><br><span class="line">   gather neighbor vertices, count p.orient_num.</span><br><span class="line">Region growing to group singularities.</span><br><span class="line">For each group, triangulate the neighbors and count the group orient_num, updating them to each point.orient_num/singular_group.</span><br></pre></td></tr></table></figure>
+
+<h3 id="Motor-cycle-graph"><a href="#Motor-cycle-graph" class="headerlink" title="Motor-cycle graph"></a>Motor-cycle graph</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Split each point into 4.</span><br><span class="line">Assign each edge from Point.adj into two of 4x4 pairs of oriented-points.</span><br></pre></td></tr></table></figure>
+
+<h3 id="Sharp-boundary-Initialization"><a href="#Sharp-boundary-Initialization" class="headerlink" title="Sharp-boundary Initialization"></a>Sharp-boundary Initialization</h3><ol>
+<li>Detect sharp points using CGAL.</li>
+<li>OrientPointAdj without forward edges are considered boundaries in original points.</li>
+<li>Trace motocycle graphs along sharp points to form sharp paths (find longest paths, remove branches.)</li>
+<li>Trace boundary points in the original graph, and map the path to motor-cycle graph. (might introduce new connections inside node with orthogonal directions.)</li>
+</ol>
+<p>(3 and 4) By tracing the route, we need to filter noise to ensure a clean graph. Other tangential paths should be removed. Paths can be traced by iteratively finding the longest paths (which should be robust), and remove overlapped tangential paths. We also remove very thin paths. Now, every path is simply a sequence of oriented point ids.</p>
+<ol start="5">
+<li>Record path ids to edges that intersect paths, and confirm path-path intersection, potentially add new points into the path.</li>
+<li>building path structure with intersections as end_idxs that splits arcs.</li>
+<li>Partition the region by region growing.</li>
+<li>Update status for all patches.</li>
+</ol>
+<h3 id="Rounds"><a href="#Rounds" class="headerlink" title="Rounds"></a>Rounds</h3><ol start="9">
+<li>non-convex corners are connected to each other build novel paths. Followed by 5-6-7-8.</li>
+<li>non-convex corners are connected to edges to build novel paths. Followed by 5-6-7-8. (Great! Now everything is convex!)</li>
+<li>Random internal sampling. Sort them, and <strong>If valid</strong>, preserve it Followed by 5-6-7-8.</li>
+<li>Edge sampling. Sort them, and <strong>If valid</strong>, preserve it Followed by 5-6-7-8.</li>
+<li>Recursively do 9-12 for invalid subpatches.</li>
+</ol>
 
             </div>
         
@@ -550,19 +585,10 @@
     
 <nav id="article-nav">
     
-        <a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Review/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más nuevo</strong>
-            <div class="article-nav-title">
-                
-                    Review of Retopology
-                
-            </div>
-        </a>
     
-    
-        <a href="/2023/12/19/%E7%A4%BE%E4%BC%9A%E6%B4%BB%E5%8A%A8/%E4%B8%9A%E5%A7%94%E4%BC%9A%E7%AD%B9%E5%8A%9E/%E8%BF%9B%E5%B1%95/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más viejo</strong>
-            <div class="article-nav-title">业委会筹办进展</div>
+        <a href="/2023/12/20/%E7%A7%91%E7%A0%94/%E9%87%8D%E6%8B%93%E6%89%91/Review/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Review of Retopology</div>
         </a>
     
 </nav>
