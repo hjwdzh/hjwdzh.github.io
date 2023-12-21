@@ -1,5 +1,5 @@
 ---
-title: Review of Retopology
+title: Retopologize the point cloud
 toc: true
 categories: [科研,重拓扑]
 date: 2023-12-20 20:00:00
@@ -8,12 +8,10 @@ tags: [科研,重拓扑]
 
 ## Background
 
-Retopologize the 3D data into a quad-like surface mesh is critical for 3D asset generation. Personally, I like the recent paper [**Reliable Feature-Line Driven Quad-Remeshing**](https://www.quadmesh.cloud/ReliableQuad.pdf) and aim to explain it.
+What if we want to build a nice topology around a pointcloud similar to [**mesh retopology**](/2023/12/20/科研/重拓扑/Review/)? Let's think about it.
 
-## Method
-
-### Overview
-Given a triangle mesh $\mathcal{M}$, it aims to partition the mesh into surface patches satisfying several metrics, including
+## 
+Similar to  aims to partition the mesh into surface patches satisfying several metrics, including
 - Topology, homeomorphic to a disk
 - Valance, 3-6
 - Convex, No left/U-turn
@@ -40,4 +38,4 @@ The rounds consist of three steps:
 - internal loop sampling
 - border-border
 
-Finally, we dissolve paths that does not do harm to our criteron.
+Finally, we disolve paths that does not do harm to our criteron.
